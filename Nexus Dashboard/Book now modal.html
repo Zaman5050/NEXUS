@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Event Calendar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="shortcut icon"
+            type="image/png"
+            href="assets/images/icon/favicon.ico"
+        />
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="assets/css/default-css.css" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="assets/css/style2.css" />
+        <link rel="stylesheet" href="assets/css/responsive2.css" />
+        <link
+            rel="stylesheet"
+            href="assets/jquery-nice-select-1.1.0/css/nice-select.css"
+        />
+        <!-- Flatpickr -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+        />
+    </head>
+
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">
+                You are using an <strong>outdated</strong> browser. Please
+                <a href="http://browsehappy.com/">upgrade your browser</a> to
+                improve your experience.
+            </p>
+        <![endif]-->
+        <!-- preloader area start -->
+        <div id="preloader">
+            <div class="loader"></div>
+        </div>
+        <!-- preloader area end -->
+        <!-- navbar start -->
+        <nav class="navigation">
+            <div class="navbar">
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="logo">
+                    <a href="#"
+                        ><img src="assets/images/icon/logo.png" alt="nexus"
+                    /></a>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#">Clients</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Event Calendar</a>
+                    </li>
+                    <li>
+                        <a href="#">Sales</a>
+                    </li>
+                    <li>
+                        <a href="#">Team</a>
+                    </li>
+                    <li>
+                        <a href="#">Requests</a>
+                    </li>
+                    <li>
+                        <a href="#">Profile</a>
+                    </li>
+                </ul>
+                <div class="dropdown">
+                    <button
+                        class="dropdown-button"
+                        type="button"
+                        id="dropdownMenuButton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        <span> Jennifer</span>
+                        <img src="assets/images/icon/profile.png" alt="" />
+                    </button>
+                    <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton"
+                    >
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar for small screens -->
+            <div class="sidebar-menu">
+                <div class="logo">
+                    <div class="close-icon">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                    </div>
+                    <a href="#"
+                        ><img src="assets/images/icon/logo.png" alt=""
+                    /></a>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li>
+                        <a class="active" href="#">Clients</a>
+                    </li>
+                    <li>
+                        <a href="#">Event Calendar</a>
+                    </li>
+                    <li>
+                        <a href="#">Sales</a>
+                    </li>
+                    <li>
+                        <a href="#">Team</a>
+                    </li>
+                    <li>
+                        <a href="#">Requests</a>
+                    </li>
+                    <li>
+                        <a href="#">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- navbar area end -->
+
+        <!-- main content area -->
+        <div class="main-content-sect pb-5">
+            <div class="sales-report-area mt-2 mb-4">
+                <div class="top-button">
+                    <a href="#" class="back-button">
+                        <img
+                            src="assets/images/icon/back-arrow.png"
+                            alt="back button"
+                        />
+                        <span>Back to Requests</span>
+                    </a>
+                </div>
+
+                <!-- Input fields area end -->
+            </div>
+            <div class="events-detail-sect mb-4">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="events-image">
+                            <img src="assets/images/icon/event-bg.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="events-info">
+                            <div class="event-top">
+                                <h2 class="event-name mb-2">Event Name</h2>
+                            </div>
+                            <div class="event-bottom">
+                                <div class="box">
+                                    <p>Date</p>
+                                    <p>Location</p>
+                                    <p>Visibility</p>
+                                </div>
+                                <div class="box">
+                                    <p>Category</p>
+                                    <p>Preferred Supplier</p>
+                                </div>
+                            </div>
+                            <div class="event-end">
+                                <p>
+                                    The Toronto International Film Festival
+                                    (TIFF) is one of the largest publicly
+                                    attended film festivals in the world,
+                                    attracting over 480,000 people annually.
+                                    Since its founding in 1976, TIFF has grown
+                                    to become a permanent destination for film
+                                    culture operating out of the TIFF Bell
+                                    Lightbox, located in downtown Toronto.
+                                    TIFF's mission is "to transform the way
+                                    people see the world through film".
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-table agency-event">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>quantity</th>
+                                <th>type</th>
+                                <th>comission</th>
+                                <th>description</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label class="checkbox-container">
+                                        <input type="checkbox" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <div class="quantity">
+                                        <button class="decrement-btn">
+                                            <img
+                                                src="assets/images/icon/minu-icon.png"
+                                                alt=""
+                                            />
+                                        </button>
+                                        <p class="ticket-quantity">1</p>
+                                        <button class="increment-btn">
+                                            <img
+                                                src="assets/images/icon/plus-icon.png"
+                                                alt=""
+                                            />
+                                        </button>
+                                    </div>
+                                </td>
+                                <td>Price</td>
+                                <td>10</td>
+                                <td class="table-descript">
+                                    The Toronto International Film Festival
+                                    (TIFF) is one of the largest publicly
+                                    attended film festivals in the world,
+                                    attracting over 480,000 people annually.
+                                    Since its founding in 1976,
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="checkbox-container">
+                                        <input type="checkbox" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <div class="quantity">
+                                        <button class="decrement-btn">
+                                            <img
+                                                src="assets/images/icon/minu-icon.png"
+                                                alt=""
+                                            />
+                                        </button>
+                                        <p class="ticket-quantity">1</p>
+                                        <button class="increment-btn">
+                                            <img
+                                                src="assets/images/icon/plus-icon.png"
+                                                alt=""
+                                            />
+                                        </button>
+                                    </div>
+                                </td>
+                                <td>Price</td>
+                                <td>10</td>
+                                <td class="table-descript">
+                                    The Toronto International Film Festival
+                                    (TIFF) is one of the largest publicly
+                                    attended film festivals in the world,
+                                    attracting over 480,000 people annually.
+                                    Since its founding in 1976,
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="btn-container">
+                        <a
+                            href=""
+                            class="add-request-btn"
+                            data-toggle="modal"
+                            data-target="#exampleModalCenter"
+                            >Add to request</a
+                        >
+                        <a
+                            href=""
+                            class="add-request-btn"
+                            data-toggle="modal"
+                            data-target="#bookNow"
+                            >Book Now</a
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="agents-sect">
+                <div class="top_agents_sect">
+                    <!-- Tabs area -->
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                id="home-tab"
+                                data-toggle="tab"
+                                href="#home"
+                                role="tab"
+                                aria-controls="home"
+                                aria-selected="true"
+                                >Bookings</a
+                            >
+                        </li>
+
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                id="contact-tab"
+                                data-toggle="tab"
+                                href="#contact"
+                                role="tab"
+                                aria-controls="contact"
+                                aria-selected="false"
+                                >Requests</a
+                            >
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div
+                            class="tab-pane fade show active"
+                            id="home"
+                            role="tabpanel"
+                            aria-labelledby="home-tab"
+                        >
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">agent</th>
+                                        <th scope="col">email address</th>
+                                        <th scope="col">client</th>
+                                        <th scope="col">ticket type</th>
+                                        <th scope="col">quantity</th>
+                                        <th scope="col">booking volume</th>
+
+                                        <th scope="col">net profit</th>
+                                        <th scope="col">status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">John Taylor</td>
+                                        <td>john.taylor@gmail.com</td>
+                                        <td>Alex Rodriguez</td>
+                                        <td>VIP</td>
+                                        <td>4</td>
+                                        <td>$23,000</td>
+                                        <td>$2,300</td>
+
+                                        <td class="table-buttons">
+                                            <a href="#" class="offer-btn"
+                                                >Offer sent</a
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">John Taylor</td>
+                                        <td>john.taylor@gmail.com</td>
+                                        <td>Alex Rodriguez</td>
+                                        <td>VIP</td>
+                                        <td>4</td>
+                                        <td>$23,000</td>
+                                        <td>$2,300</td>
+
+                                        <td class="table-buttons">
+                                            <a href="#" class="offer-btn"
+                                                >Offer sent</a
+                                            >
+                                        </td>
+                                    </tr>
+
+                                    <tr style="height: 50px"></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div
+                            class="tab-pane fade"
+                            id="profile"
+                            role="tabpanel"
+                            aria-labelledby="profile-tab"
+                        >
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Event</th>
+                                        <th scope="col">Client</th>
+                                        <th scope="col">Event Date</th>
+                                        <th scope="col">Booking Volume</th>
+                                        <th scope="col">Comission</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">Knicks v lakers</td>
+                                        <td>John Taylor</td>
+                                        <td>August 12, 2023</td>
+                                        <td>$3500</td>
+                                        <td>$400</td>
+                                        <td class="table-buttons">
+                                            <a href="#" class="view_button"
+                                                >Message</a
+                                            >
+                                            <a href="#" class="view_button"
+                                                >View</a
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">Knicks v lakers</td>
+                                        <td>John Taylor</td>
+                                        <td>August 12, 2023</td>
+                                        <td>$3500</td>
+                                        <td>$400</td>
+                                        <td>
+                                            <a href="#" class="view_button"
+                                                >Message</a
+                                            >
+                                            <a href="#" class="view_button"
+                                                >View</a
+                                            >
+                                        </td>
+                                    </tr>
+
+                                    <tr style="height: 50px"></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div
+                            class="tab-pane fade"
+                            id="contact"
+                            role="tabpanel"
+                            aria-labelledby="contact-tab"
+                        >
+                            ...
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal popup submit request-->
+            <div
+                class="modal fade submit-request-modal"
+                id="exampleModalCenter"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-top">
+                            <h5 class="modal-title">Submit Request</h5>
+                        </div>
+                        <div class="modal-bottom">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="submit-left">
+                                        <div class="ticket">
+                                            <img
+                                                src="assets/images/icon/request-img.png"
+                                                alt=""
+                                            />
+                                            <div class="count-btn">
+                                                <h5>VIP Ticket</h5>
+                                                <p>01</p>
+                                            </div>
+                                        </div>
+                                        <div class="ticket pb-3">
+                                            <img
+                                                src="assets/images/icon/request-img.png"
+                                                alt=""
+                                            />
+                                            <div class="count-btn">
+                                                <h5>General Admission</h5>
+                                                <p>01</p>
+                                            </div>
+                                        </div>
+                                        <label class="checkbox-container"
+                                            >This request is urgent
+                                            <input type="checkbox" />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label
+                                                for="inputEmail4"
+                                                class="profile-labels"
+                                                >Client</label
+                                            >
+                                            <input
+                                                type="text"
+                                                class="form-control search-icon profile-inputs"
+                                                id="inputEmail4"
+                                                placeholder="Client"
+                                            />
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label
+                                                for="inputPassword4"
+                                                class="profile-labels"
+                                                >Est. Budget</label
+                                            >
+                                            <input
+                                                type="text"
+                                                class="form-control profile-inputs"
+                                                id="inputPassword4"
+                                                placeholder="Budget"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="form-row mt-4">
+                                        <div class="form-group col-md-12">
+                                            <label
+                                                for="inputPassword4"
+                                                class="profile-labels"
+                                                >Any Specific Details?</label
+                                            >
+                                            <textarea
+                                                class="profile-inputs form-control"
+                                                name=""
+                                                id=""
+                                                cols="30"
+                                                rows="3"
+                                                placeholder="Please list any additional needs (Hotels, Flights, Cars, etc.)"
+                                            ></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-end">
+                            <button
+                                type="button"
+                                class="btn"
+                                data-dismiss="modal"
+                            >
+                                Cancel
+                            </button>
+                            <button type="button" class="btn submit-btn">
+                                Submit Request
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal popup book now -->
+            <div
+                class="modal fade view-offer-modal send-payment-modal"
+                id="bookNow"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalCenterTitle"
+                style="display: none"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="title">
+                            <!-- <a href=""
+                                ><img
+                                    src="assets/images/icon/Arrow 2.png"
+                                    alt=""
+                            /></a> -->
+                            <h3 class="made-evolve-heading">Accept Offer</h3>
+                        </div>
+                        <div class="modal-bottom">
+                            <div class="calculation">
+                                <p>Total: <span>$4,000</span></p>
+                                <p>Commission (10%): <span>$400</span></p>
+                            </div>
+                            <div class="pay-choices">
+                                <a
+                                    href=""
+                                    class="pay-option"
+                                    data-toggle="modal"
+                                    data-target="#exampleModalCenter3"
+                                >
+                                    <div>
+                                        <p>Pay on Behlaf of client</p>
+                                        <span
+                                            >You can use card on file or payment
+                                            details</span
+                                        >
+                                    </div>
+                                    <img
+                                        src="assets/images/icon/Arrow 2.png"
+                                        alt=""
+                                    />
+                                </a>
+                                <a
+                                    href=""
+                                    class="pay-option"
+                                    data-toggle="modal"
+                                    data-target="#exampleModalCenter5"
+                                >
+                                    <div>
+                                        <p>Send to Client for Payment</p>
+                                        <span
+                                            >Client will receive an email to
+                                            make payment</span
+                                        >
+                                    </div>
+                                    <img
+                                        src="assets/images/icon/Arrow 2.png"
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- pay modal -->
+            <div
+                class="modal fade view-offer-modal send-payment-modal"
+                id="exampleModalCenter3"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalCenterTitle"
+                style="display: none"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="title">
+                            <a href="" data-dismiss="modal"
+                                ><img
+                                    src="assets/images/icon/Arrow 2.png"
+                                    alt=""
+                            /></a>
+                            <h3 class="made-evolve-heading">
+                                Send for Payment
+                            </h3>
+                        </div>
+                        <div class="modal-bottom">
+                            <div class="card-details">
+                                <div class="payment-option">
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="inlineRadioOptions"
+                                            id="paymentOnFile"
+                                            value="Flexible"
+                                        />
+                                        <label
+                                            class="form-check-label file-payment-radio"
+                                            for="paymentOnFile"
+                                            >Payment on file</label
+                                        >
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="inlineRadioOptions"
+                                            id="inlineRadio1"
+                                            checked
+                                            value="specific"
+                                        />
+                                        <label
+                                            class="form-check-label credit-card-radio"
+                                            for="inlineRadio1"
+                                            >New Credit Card</label
+                                        >
+                                    </div>
+                                    <div
+                                        class="form-check form-check-inline ml-4"
+                                    >
+                                        <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="inlineRadioOptions"
+                                            id="inlineRadio2"
+                                            value="Flexible"
+                                        />
+                                        <label
+                                            class="form-check-label"
+                                            for="inlineRadio2"
+                                            >ACH</label
+                                        >
+                                    </div>
+                                </div>
+                                <p class="payment-descrip">
+                                    Maximum payment for credit card is $5,000. A
+                                    service fee of 3.5% will be applied.
+                                    Bookings over $5,000 require ACH.
+                                </p>
+                                <div class="credit-card-details">
+                                    <div class="form-group pt-4 mb-4">
+                                        <label for="" class="profile-labels"
+                                            >Name on Card</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control profile-inputs"
+                                            placeholder="First and Last Name"
+                                        />
+                                    </div>
+                                    <div class="card-spec">
+                                        <div class="box1 form-group">
+                                            <label for="" class="profile-labels"
+                                                >Credit Card</label
+                                            >
+                                            <input
+                                                type="text"
+                                                class="form-control profile-inputs"
+                                                placeholder="XXXXXXXXXXXX"
+                                            />
+                                        </div>
+                                        <div class="box2 form-group">
+                                            <label for="" class="profile-labels"
+                                                >Month</label
+                                            >
+                                            <input
+                                                type="text"
+                                                class="form-control profile-inputs"
+                                                placeholder="XX"
+                                            />
+                                        </div>
+                                        <div class="box3 form-group">
+                                            <label for="" class="profile-labels"
+                                                >Year</label
+                                            >
+                                            <input
+                                                type="text"
+                                                class="form-control profile-inputs"
+                                                placeholder="XX"
+                                            />
+                                        </div>
+                                        <div class="box4 form-group">
+                                            <label for="" class="profile-labels"
+                                                >CVC</label
+                                            >
+                                            <input
+                                                type="text"
+                                                class="form-control profile-inputs"
+                                                placeholder="CVC"
+                                            />
+                                        </div>
+                                        <div class="box5 form-group">
+                                            <label for="" class="profile-labels"
+                                                >Zip</label
+                                            >
+                                            <input
+                                                type="text"
+                                                class="form-control profile-inputs"
+                                                placeholder="XXXXX"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="save-card">
+                                        <label class="checkbox-container"
+                                            >Save card for future booking for
+                                            this client
+                                            <input type="checkbox" />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="payment-on-file">
+                                    <div class="box">
+                                        <div class="box-left">
+                                            <img
+                                                src="assets/images/icon/logos_visa.png"
+                                                alt=""
+                                            />
+                                            <div>
+                                                <p>Jordan Rothstein</p>
+                                                <p class="card-no">
+                                                    XXXXXXXXX2344
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="box-right">
+                                            <input
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="exampleRadios"
+                                                id="modal-radio"
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="modal-radio"
+                                                >Primary
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-end">
+                            <div class="total">
+                                <p>Subtotal</p>
+                                <p>$2,000</p>
+                            </div>
+                            <div class="total add-markup">
+                                <a href="">Add additonal markup</a>
+                                <input type="text" name="" id="" />
+                            </div>
+                            <div class="total">
+                                <p>Total</p>
+                                <p>$2,000</p>
+                            </div>
+
+                            <div class="submit-buttons">
+                                <a href="" class="btn approval-btn">pay now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- send to client for payment -->
+
+            <div
+                class="modal fade view-offer-modal send-payment-modal"
+                id="exampleModalCenter5"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalCenterTitle"
+                style="display: none"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="title">
+                            <a href="" data-dismiss="modal"
+                                ><img
+                                    src="assets/images/icon/Arrow 2.png"
+                                    alt=""
+                            /></a>
+                            <h3 class="made-evolve-heading">
+                                Send for Payment
+                            </h3>
+                        </div>
+                        <div class="modal-bottom">
+                            <div class="to-email inputs form-group">
+                                <span>To:</span>
+                                <input
+                                    type="text"
+                                    placeholder="jordan@kingtide.com"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    class="inputs"
+                                    placeholder="Subject"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <textarea
+                                    name=""
+                                    id=""
+                                    cols="30"
+                                    rows="5"
+                                    class="inputs"
+                                    placeholder="Email"
+                                ></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-end">
+                            <div class="total">
+                                <p>Subtotal</p>
+                                <p>$2,000</p>
+                            </div>
+                            <div class="total add-markup">
+                                <a href="">Add additonal markup</a>
+                                <input type="text" name="" id="" />
+                            </div>
+                            <div class="total">
+                                <p>Total</p>
+                                <p>$2,000</p>
+                            </div>
+
+                            <div class="submit-buttons">
+                                <a href="" class="btn approval-btn">Send now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jquery latest version -->
+        <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+        <!-- bootstrap 4 js -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/metisMenu.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+        <script src="assets/js/scripts.js"></script>
+
+        <!-- jquery for Nice Select -->
+        <script src="assets/jquery-nice-select-1.1.0/js/jquery.js"></script>
+        <script src="assets/jquery-nice-select-1.1.0/js/jquery.nice-select.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+        <script>
+            $(document).ready(function () {
+                $(".select-options").niceSelect();
+            });
+            // Flatpickr plugin
+            $(".custom-picker").flatpickr({
+                dateFormat: "d-m-y",
+            });
+        </script>
+
+        <script>
+            let ticketNumber = 1;
+            let decrementBtn = document.querySelector(".decrement-btn");
+            let incrementBtn = document.querySelector(".increment-btn");
+            let ticketQuantity = document.querySelector(".ticket-quantity");
+
+            decrementBtn.addEventListener("click", () => {
+                ticketNumber--;
+                if (ticketNumber === -1) {
+                    ticketNumber = 0;
+                }
+                ticketQuantity.innerHTML = ticketNumber;
+            });
+
+            incrementBtn.addEventListener("click", () => {
+                ticketNumber++;
+                ticketQuantity.innerHTML = ticketNumber;
+            });
+        </script>
+        <script src="assets/js/responsive.js"></script>
+    </body>
+</html>

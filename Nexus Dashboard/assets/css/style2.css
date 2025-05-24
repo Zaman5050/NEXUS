@@ -1,0 +1,1269 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@1&display=swap");
+@font-face {
+    font-family: MADE-evolve-sans;
+    src: url(../fonts/MADE\ Evolve\ Sans\ Regular.woff);
+}
+@font-face {
+    font-family: Open-sauce-sans;
+    src: url(../fonts/OpenSauceSans-Regular.ttf);
+}
+
+body {
+    font-family: Open-sauce-sans;
+    background-color: #e9e9e9;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+    margin: 0;
+}
+ul {
+    list-style: none;
+}
+button {
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: none;
+}
+.navigation {
+    background-color: #405341;
+    padding: 28px 37px;
+}
+.logo img {
+    max-width: 120px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 58px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    padding: 0;
+    font-size: 15px;
+}
+.navbar .dropdown .dropdown-button {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.navbar .dropdown .dropdown-button img {
+    padding-left: 20px;
+    width: 61px;
+    height: auto;
+    border-radius: 50%;
+}
+.navbar .dropdown .dropdown-menu {
+    left: unset;
+    right: 0;
+    width: max-content;
+    border-radius: 3px;
+    border: 1px solid var(--Llight-Grey, #e9e9e9);
+    background: #dfe1dc;
+
+    /* Drop Shadow */
+    box-shadow: 0px 4px 20px 0px rgba(168, 168, 168, 0.25);
+}
+.navbar .dropdown .dropdown-menu .dropdown-item:hover {
+    background-color: #dfe1dc;
+}
+.navbar .dropdown .dropdown-menu .dropdown-item.current {
+    font-weight: 700;
+}
+.navbar .dropdown .dropdown-menu .dropdown-item .profile-image {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.main-content-sect {
+    max-width: 1170px;
+    width: 90%;
+    padding: 46px 0;
+    margin: auto;
+}
+.main-content-sect .profile-title {
+    color: #000;
+    font-family: "Baskerville", serif;
+    font-size: 48px;
+    font-style: italic;
+}
+.main-content-sect .profile-buttons {
+    text-align: right;
+}
+.main-content-sect .profile-buttons a {
+    color: #000;
+}
+.main-content-sect .profile-buttons a.active {
+    font-weight: 700;
+}
+.admin-fields {
+    border-radius: 10px;
+    background: #fff;
+    padding: 42px 52px;
+    margin-top: 29px;
+    box-shadow: 0px 4px 20px 0px rgba(168, 168, 168, 0.25);
+}
+.admin-fields h3 {
+    color: #000;
+    margin-bottom: 19px;
+    font-family: MADE-evolve-sans;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.admin-fields .row .upload-icon-bg {
+    position: relative;
+}
+.admin-fields .upload-icon-bg button {
+    position: absolute;
+    top: 32px;
+    border-radius: 10px;
+    background: transparent;
+    padding: 12px 20px;
+    color: #000;
+    font-size: 15px;
+    width: 90%;
+    border: 1px solid#E9E9E9;
+
+    z-index: 1;
+    text-align: left;
+}
+.admin-fields .upload-icon-bg input {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0;
+}
+/* Custom radio */
+.wrapper {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.wrapper input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border: 1px solid #bbb;
+}
+
+/* On mouse-over, add a grey background color */
+.wrapper:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.wrapper input:checked ~ .checkmark {
+    /* border: 1px solid #000; */
+    background-color: #acacac;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Style the indicator (dot/circle) */
+.wrapper .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    z-index: 2;
+    display: block;
+    background: #405341;
+}
+.admin-fields .choose-colors {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+.wrapper.second-color .checkmark::after {
+    background: #b5bfa6;
+}
+.add-another-btn a {
+    color: #000;
+    font-family: MADE-evolve-sans;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+}
+
+.admin-fields .buttons-wrapper {
+    padding-top: 29px;
+    text-align: right;
+}
+.admin-fields .buttons-wrapper a {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #bbb;
+    padding: 14px 41px;
+    font-weight: 700;
+    border-radius: 5px;
+    display: inline-block;
+}
+.admin-fields .buttons-wrapper a.next-btn {
+    background-color: #405341;
+}
+.sidebar-menu {
+    display: none;
+}
+.menu-icon {
+    display: none;
+}
+.navbar .nav-links li.active {
+    position: relative;
+}
+.navbar .nav-links li.active::after {
+    content: "";
+    position: absolute;
+    background-image: url("../images/icon/active-link.png");
+    width: 53px;
+    height: 6px;
+    bottom: -36px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sidebar-menu .nav-links li a.active {
+    background-color: #b5bfa6;
+    color: #405341;
+}
+
+/* =============== Clients screen ============ */
+.download-template-btn a {
+    position: relative;
+    left: 143px;
+    color: #000;
+    font-size: 14px;
+    font-style: italic;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+}
+.client-button-area a.add-btn {
+    padding: 12px 20px;
+    background-color: #1f1f1f;
+    color: #b5bfa6;
+    text-transform: uppercase;
+    border-radius: 10px;
+    width: 275px;
+    max-width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.client-button-area a.add-btn:hover {
+    color: #b5bfa6;
+}
+.client-info {
+    border-right: 1px solid #b5bfa6;
+}
+.client-info .box1 .circle-name {
+    display: flex;
+    width: 75px;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #e9e9e9;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+.client-info .box2 .client-caption {
+    display: flex;
+    gap: 30px;
+}
+.add-client-modal .modal-lg {
+    max-width: 986px;
+}
+.add-client-modal .modal-content {
+    padding: 29px 0;
+}
+.add-client-modal .modal-top {
+    padding-left: 39px;
+    padding-bottom: 19px;
+}
+.add-client-modal .modal-bottom {
+    padding: 0;
+}
+.add-client-modal .modal-bottom .tab-content {
+    padding: 37px 45px;
+}
+.add-client-modal .modal-bottom .nav-tabs {
+    border: none;
+    border-right: 1px solid #eaeae1;
+    padding-bottom: 88px;
+    height: 100%;
+}
+.add-client-modal .modal-bottom .nav .nav-link {
+    color: #000;
+    border: none;
+    font-size: 15px;
+    padding: 15px 25px;
+    border-left: 7px solid transparent;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.add-client-modal .modal-bottom .nav .nav-link:hover {
+    font-size: 15px;
+    border-left: 7px solid transparent;
+}
+.add-client-modal .modal-bottom .nav .nav-link.active {
+    border-left: 7px solid #405341;
+    border-radius: 0;
+    font-weight: 700;
+}
+.add-client-modal .modal-end {
+    padding-right: 24px;
+}
+a.add-relation-btn {
+    color: #405341;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+.tab-content .important-dates .form-row .form-group {
+    position: relative;
+}
+
+.tab-content .important-dates .form-group .input-date-icon {
+    position: absolute;
+    top: 47px;
+    left: 24px;
+}
+.tab-content .passport-info .form-group input[type="file"] {
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+.tab-content .passport-info .form-group button {
+    position: absolute;
+    top: 33px;
+    padding: 12px 20px;
+    width: 97%;
+    border: 1px solid #e9e9e9;
+    font-size: 15px;
+    border-radius: 10px;
+    z-index: 1;
+    background: #fff;
+}
+.passport-info .form-group input[type="radio"]:checked,
+.passport-info .form-group input[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.passport-info .form-group input[type="radio"]:checked + label,
+.passport-info .form-group input[type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-left: 40px;
+    cursor: pointer;
+    line-height: 28px;
+    display: inline-block;
+    color: #000;
+    font-size: 15px;
+}
+.passport-info .form-group input[type="radio"]:checked + label:before,
+.passport-info .form-group input[type="radio"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 21px;
+    height: 21px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+.passport-info .form-group input[type="radio"]:checked + label:after,
+.passport-info .form-group input[type="radio"]:not(:checked) + label:after {
+    content: "";
+    width: 21px;
+    height: 21px;
+    background: #405341;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    border-radius: 100%;
+}
+.passport-info .form-group input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+}
+.passport-info .form-group input[type="radio"]:checked + label:after {
+    opacity: 1;
+}
+
+.notes-tab .form-group textarea {
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #e9e9e9;
+}
+
+/* ================ Agent: Events Calendar ================ */
+.request-button .btn {
+    padding: 12px 20px;
+    background-color: #405341;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+}
+.view-buttons {
+    margin-top: 22px;
+    display: flex;
+    justify-content: end;
+}
+.view-buttons .btn {
+    color: #757575;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: transparent;
+}
+.view-buttons .btn span {
+    margin-left: 3px;
+}
+.checkbox-container {
+    /* display: block; */
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #000;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkbox-container .checkmark {
+    position: absolute;
+    top: -7px;
+    left: 0;
+    height: 27px;
+    width: 29px;
+    border-radius: 0px;
+    background-color: #fff;
+    border: 1px solid #bbb;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox-container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+    left: 5px;
+    top: 4px;
+    width: 17px;
+    height: 17px;
+    background: #405341;
+}
+.agency-event-table {
+    overflow-x: auto;
+    margin-top: 29px;
+}
+.agency-event-table .table {
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.agency-event-table .table thead {
+    background-color: #405341;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.agency-event-table .table .agency-table-img {
+    width: 62px;
+    height: 41px;
+}
+.agency-event-table .table tbody .view-event-btn {
+    color: #000;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.agency-cards .card {
+    position: relative;
+}
+.agency-cards .card .checkbox-container {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+}
+.agency-cards .card .checkbox-container .checkmark {
+    top: 0;
+}
+
+.agency-event tbody .quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.agency-event tbody .quantity button {
+    background-color: transparent;
+    border: none;
+}
+.agency-event tbody .quantity button img {
+    display: block;
+}
+.add-request-btn {
+    border-radius: 5px;
+    background: #405341;
+    padding: 5px 17px;
+    color: #fff !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 138px;
+    border: none;
+}
+
+.event-table tbody tr {
+    border-bottom: 1px solid #e9e9e9;
+}
+.agency-event .btn-container {
+    padding: 12px;
+}
+
+.submit-request-modal .modal-dialog {
+    max-width: 994px;
+}
+.submit-request-modal .modal-content {
+    border-radius: 10px;
+    background: var(--White, #fff);
+
+    /* Shadow */
+    box-shadow: 0px 4px 30px 0px rgba(159, 159, 159, 0.25);
+    padding: 30px 59px 68px 59px;
+}
+
+.submit-request-modal .modal-top {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eaeae1;
+}
+.submit-request-modal .modal-top h5 {
+    color: #000;
+    font-size: 36px;
+    font-family: "Baskervville", serif;
+}
+
+.submit-request-modal .modal-bottom {
+    padding: 42px 0;
+}
+.submit-request-modal .modal-bottom .search-icon {
+    background: url(../images/icon/search-icon.png) no-repeat 12px 50%;
+    padding-left: 40px;
+    background-size: 20px;
+}
+.submit-left {
+    border-right: 1px solid #e9e9e9;
+}
+.submit-left .ticket {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 26px;
+}
+.submit-left .ticket img {
+    width: 93px;
+    height: 85px;
+}
+.submit-left .ticket h5 {
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.submit-request-modal .modal-end {
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+}
+.submit-request-modal .modal-end .btn {
+    padding: 14px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 142px;
+    background-color: #bbb;
+    border-radius: 5px;
+}
+.submit-request-modal .modal-end .btn.submit-btn {
+    background-color: #405341;
+}
+.submit-request-modal .commission {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+/* ============== Suppliers: Request ================ */
+.profile-switch {
+    text-align: right;
+    font-size: 15px;
+    font-weight: 700;
+}
+.profile-switch .switch-text {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.supplier-request .request-left .outer-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.supplier-request .request-left .outer-div .status {
+    font-weight: 700;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+.supplier-request .request-left .outer-div .pending {
+    padding: 5px 17px;
+    font-size: 10px;
+    color: #405341;
+    border-radius: 5px;
+    background: #bfb3a6;
+    text-transform: uppercase;
+}
+.supplier-request .request-left .outer-div .submit-offer {
+    padding: 12px 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #405341;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.send-offer-modal .add-ticket-button a {
+    color: #000;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.send-offer-modal .text h4 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.send-offer-modal .text p {
+    color: #000;
+    font-size: 16px;
+}
+.send-offer-modal .offer-detail {
+    border-bottom: 1px solid #eaeae1;
+    padding-bottom: 24px;
+    margin-bottom: 16px;
+}
+
+.send-offer-modal .upload-img-button {
+    position: relative;
+}
+.send-offer-modal .upload-img-button input {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    padding: 5px 0;
+    z-index: 2;
+    opacity: 0;
+}
+.send-offer-modal .upload-img-button button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px dashed #bbb;
+    background: transparent;
+    font-size: 12px;
+    border-radius: 10px;
+    height: 40px;
+    z-index: 1;
+}
+
+.upload-img-title {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    overflow-wrap: break-word;
+}
+
+/* ============== Screen: Agent Profile ================ */
+.agent-profile {
+    max-width: 694px;
+    width: 90%;
+    margin: 66px auto;
+    border-radius: 10px;
+    background: #fff;
+    padding: 26px 50px;
+
+    /* Drop Shadow */
+    box-shadow: 0px 4px 20px 0px rgba(168, 168, 168, 0.25);
+}
+
+.agent-profile h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.agent-profile .form-group {
+    margin-bottom: 21px;
+}
+
+.agent-profile .save-profile {
+    text-align: center;
+    margin-top: 33px;
+}
+.agent-profile .save-profile button {
+    background-color: #405341;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    border-radius: 5px;
+    width: 279px;
+    border: none;
+}
+
+/* ============ Screen: Request (Supplier view) (updated) ============ */
+.send-offer-supplier-view {
+    border-radius: 10px;
+    background: #fff;
+    padding: 29px;
+
+    box-shadow: 0px 4px 30px 0px rgba(159, 159, 159, 0.25);
+    height: 100%;
+    position: relative;
+}
+.send-offer-supplier-view .title {
+    border-bottom: 1px solid #e9e9e9;
+    margin-bottom: 30px;
+}
+
+.send-offer-supplier-view .title h4 {
+    color: #000;
+    font-family: MADE-evolve-sans;
+    font-size: 24px;
+    font-weight: 700;
+}
+.send-offer-supplier-view .total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 15px;
+    padding-bottom: 24px;
+    padding-top: 43px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.send-offer-buttons {
+    display: flex;
+    justify-content: end;
+    margin-top: 40px;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.send-offer-buttons .btn {
+    border-radius: 5px;
+    background: #bbb;
+    padding: 14px 41px;
+    text-align: center;
+    /* border: none; */
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff !important;
+}
+.send-offer-buttons .btn.send-offer {
+    background-color: #405341;
+}
+
+.send-offer-supplier-view .multiple-tickets {
+    max-height: 450px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.send-offers-table {
+    overflow: auto;
+    max-height: 573px;
+}
+
+.send-offers-table .table {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.send-offers-table .table thead {
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.send-offers-table .table tbody tr {
+    border-bottom: 1px solid #405341;
+}
+
+.send-offers-table .table tbody .update {
+    background-color: #405341;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.send-offer-supplier-view .sent-offer {
+    padding-left: 12px;
+}
+
+/* =========== Screen: Profile =========== */
+.profile-tabs-sect {
+    background-color: #fff;
+    border-radius: 10px;
+
+    box-shadow: 0px 4px 20px 0px rgba(168, 168, 168, 0.25);
+}
+
+.profile-tabs-sect .profile-right-tabs {
+    border-right: 1px solid #e9e9e9;
+    height: 100%;
+}
+
+.profile-tabs-sect .profile-right-tabs > h3 {
+    padding: 40px 0 20px 31px;
+}
+.profile-tabs-sect .modal-bottom .nav-tabs {
+    border-right: none;
+    flex-direction: column;
+    height: unset;
+    padding-bottom: 0;
+}
+
+.profile-tabs-sect .modal-bottom .tab-content {
+    padding: 40px;
+}
+.profile-pic-upload {
+    position: relative;
+}
+.profile-pic-upload input {
+    z-index: 2;
+    position: relative;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.profile-pic-upload button {
+    position: absolute;
+    top: 33px;
+    height: 48.5px;
+    font-size: 15px;
+    width: 95%;
+    background: transparent;
+    border: 1px solid #e9e9e9;
+    border-radius: 10px;
+}
+.profile-save-button {
+    text-align: right;
+    margin-top: 39px;
+}
+.profile-save-button .button {
+    background-color: #405341;
+    color: #fff;
+    width: 197px;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    height: 49px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.profile-tabs-sect .parent-height {
+    min-height: 395px;
+}
+::-webkit-file-upload-button {
+    cursor: pointer;
+}
+.profile-company-tab select {
+    height: 48.5px;
+}
+#payment-history .table tr {
+    border-bottom: 1px solid #e9e9e9;
+    font-size: 12px;
+    color: #000;
+}
+
+/* ========== Screen: Request (payment-views) =========== */
+.view-request-offer h4,
+.view-request-offer p {
+    font-weight: 700;
+}
+.send-payment-modal .modal-dialog {
+    max-width: 620px;
+}
+.send-payment-modal .title h3 {
+    text-align: center;
+}
+.send-payment-modal .title a {
+    position: absolute;
+}
+.send-payment-modal .modal-content .modal-bottom {
+    margin-top: 25px;
+    border-top: 1px solid #e9e9e9;
+}
+.send-payment-modal .modal-content .to-email input {
+    width: 95%;
+    border: none;
+}
+.send-payment-modal .modal-end .add-markup a {
+    color: #405341;
+    text-decoration: underline;
+}
+
+.send-payment-modal .modal-end .add-markup input {
+    text-align: right;
+    border: 1px solid #d6d6d6;
+    padding: 8px 13px;
+}
+
+.send-offer-supplier-view .message-button {
+    position: absolute;
+    bottom: 29px;
+}
+
+.payment-section .request-left {
+    padding: 47px 47px 29px 54px;
+}
+
+.payment-section .request-left .payment-payer h4 {
+    font-family: MADE-evolve-sans;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.payment-section .request-left .request-bottom {
+    padding-top: 49px;
+    padding-bottom: 38px;
+}
+.payment-section .request-left .payment-detail {
+    padding: 23px 0;
+}
+.payment-section .request-left .payment-detail .box {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
+}
+.payment-section .request-left .payment-detail .total-payment {
+    font-weight: 700;
+}
+
+.payment-section .card-details {
+    border-radius: 10px;
+    background: #fff;
+    padding: 40px;
+
+    /* Drop Shadow */
+    box-shadow: 0px 4px 20px 0px rgba(168, 168, 168, 0.25);
+}
+.payment-section .card-details .card-title h3 {
+    font-family: MADE-evolve-sans;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+/* Payment Radios */
+.card-details input[type="radio"]:checked,
+.card-details input[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.card-details input[type="radio"]:checked + label,
+.card-details input[type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-left: 40px;
+    cursor: pointer;
+    line-height: 28px;
+    display: inline-block;
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+}
+.card-details input[type="radio"]:checked + label:before,
+.card-details input[type="radio"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 29px;
+    height: 29px;
+    border-radius: 100%;
+    background: #e9e9e9;
+}
+.card-details input[type="radio"]:checked + label:after,
+.card-details input[type="radio"]:not(:checked) + label:after {
+    content: "";
+    width: 21px;
+    height: 21px;
+    background: #405341;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+}
+.card-details input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+}
+.card-details input[type="radio"]:checked + label:after {
+    opacity: 1;
+}
+
+.card-details .payment-descrip {
+    color: #000;
+    font-size: 12px !important;
+    margin-top: 20px;
+}
+.card-details .card-spec {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.card-details .card-spec .box1 {
+    flex: 1 1 164px;
+}
+
+.card-details .card-spec .box2,
+.card-details .card-spec .box3 {
+    flex: 1 1 64px;
+}
+.card-details .card-spec .box4,
+.card-details .card-spec .box5 {
+    flex: 1 1 87px;
+}
+.card-details .save-card .checkbox-container .checkmark {
+    height: 22px;
+    width: 22px;
+    top: -2px;
+}
+.card-details .save-card .checkbox-container .checkmark:after {
+    left: 3px;
+    top: 3px;
+    width: 14px;
+    height: 14px;
+}
+
+.payment-on-file {
+    display: none;
+    margin-top: 19px;
+    margin-bottom: 20px;
+}
+.payment-on-file .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e9e9e9;
+    border-radius: 10px;
+    padding: 22px 18px;
+}
+
+.payment-on-file .box-left {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.payment-on-file .box-left img {
+    background-color: #d9d9d930;
+    width: 72px;
+    height: 47px;
+    object-fit: contain;
+    padding: 18px;
+}
+
+.payment-on-file .box .card-status,
+.payment-on-file .box .card-no {
+    color: #bbb;
+    font-size: 12px;
+}
+
+.card-details .payment-on-file input[type="radio"]:checked + label,
+.card-details .payment-on-file input[type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-right: 40px;
+    cursor: pointer;
+    line-height: 28px;
+    display: inline-block;
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    padding-left: 0;
+}
+
+.card-details .payment-on-file input[type="radio"]:checked + label:before,
+.card-details
+    .payment-on-file
+    input[type="radio"]:not(:checked)
+    + label:before {
+    right: 0;
+    left: unset;
+    background: transparent;
+    border: 1px solid #e9e9e9;
+}
+.card-details .payment-on-file input[type="radio"]:checked + label::after,
+.card-details
+    .payment-on-file
+    input[type="radio"]:not(:checked)
+    + label::after {
+    right: 4px;
+    left: unset;
+}
+
+/* Book now pop up  */
+
+.pay-choices {
+    margin-top: 20px;
+}
+.pay-choices .pay-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.pay-choices .pay-option img {
+    transform: rotate(180deg);
+}
+
+.pay-choices .pay-option span {
+    color: #000;
+}
+
+/* ===== Scroll bar ==== */
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 4px;
+}
+::-webkit-scrollbar-thumb {
+    background: #40534140;
+    border-radius: 10px;
+}
+
+/* Utility classes */
+
+.tab-content .important-dates .custom-picker {
+    background-color: #fff;
+    padding-left: 50px;
+}
+.required-star {
+    color: #ff0000;
+}
+.profile-labels {
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+}
+.profile-inputs {
+    border-radius: 10px;
+    border: 1px solid#E9E9E9;
+    padding: 12px 20px;
+    background: #fff;
+    color: #000 !important;
+    font-size: 15px;
+    width: 100%;
+}
+.profile-inputs::placeholder {
+    color: #000;
+}
+.profile-inputs:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: #e9e9e9;
+}
+.made-evolve-heading {
+    color: #000;
+    font-family: MADE-evolve-sans;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 576px) {
+    .add-client-modal .modal-bottom .nav-tabs {
+        flex-direction: column;
+        padding-bottom: 0;
+        border-right: none;
+        border-bottom: 1px solid #e9e9e9;
+    }
+}

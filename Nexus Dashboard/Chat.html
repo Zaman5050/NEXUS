@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Chat</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="shortcut icon"
+            type="image/png"
+            href="assets/images/icon/favicon.ico"
+        />
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="assets/css/default-css.css" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="assets/css/responsive.css" />
+    </head>
+
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">
+                You are using an <strong>outdated</strong> browser. Please
+                <a href="http://browsehappy.com/">upgrade your browser</a> to
+                improve your experience.
+            </p>
+        <![endif]-->
+        <!-- preloader area start -->
+        <div id="preloader">
+            <div class="loader"></div>
+        </div>
+        <!-- preloader area end -->
+        <!-- page container area start -->
+        <div class="page-container">
+            <!-- sidebar menu area start -->
+            <div class="sidebar-menu">
+                <div class="sidebar-header">
+                    <div class="logo">
+                        <a href="index.html"
+                            ><img src="assets/images/icon/logo.png" alt="logo"
+                        /></a>
+                    </div>
+                </div>
+                <div class="main-menu">
+                    <div class="menu-inner">
+                        <nav>
+                            <ul class="metismenu" id="menu">
+                                <li class="">
+                                    <a href="#">
+                                        <img
+                                            class="greenIcon"
+                                            src="assets/images/icon/icon-0.png"
+                                        />
+                                        <img
+                                            class="whiteIcon"
+                                            src="assets/images/icon/icon-00.png"
+                                        />
+                                        <span>dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#">
+                                        <img
+                                            class="greenIcon"
+                                            src="assets/images/icon/icon-01.png"
+                                        />
+                                        <img
+                                            class="whiteIcon"
+                                            src="assets/images/icon/icon-1.png"
+                                        />
+                                        <span>Event Calendar</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#">
+                                        <img
+                                            class="greenIcon"
+                                            src="assets/images/icon/icon-02.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="whiteIcon"
+                                            src="assets/images/icon/icon-2.png"
+                                        />
+                                        <span>Agents</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="assets/images/icon/icon-3.png"
+                                        />
+                                        <span>Clients</span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">
+                                        <img
+                                            class="whiteIcon"
+                                            src="assets/images/icon/icon-4.png"
+                                        />
+                                        <img
+                                            class="greenIcon"
+                                            src="assets/images/icon/icon-04.png"
+                                            alt=""
+                                        />
+                                        <span>Team</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="assets/images/icon/icon-5.png"
+                                        />
+                                        <span>Requests</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="assets/images/icon/icon-6.png"
+                                        /><span>Chat</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="assets/images/icon/icon-7.png"
+                                        />
+                                        <span>Suppliers</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="assets/images/icon/icon-8.png"
+                                        />
+                                        <span>Reporting</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar menu area end -->
+            <!-- main content area start -->
+            <div class="main-content">
+                <!-- header area start -->
+                <div class="header-area">
+                    <div class="row align-items-center">
+                        <!-- nav and search button -->
+                        <div class="col clearfix">
+                            <div class="nav-btn pull-left">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="search-box pull-left"></div>
+                        </div>
+                        <!-- profile info & task notification -->
+                        <div class="col clearfix">
+                            <div class="nav_right_area">
+                                <div class="dropdown">
+                                    <button
+                                        class=""
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        My Account<img
+                                            src="assets/images/icon/logo_header.png"
+                                            alt=""
+                                        />
+                                    </button>
+                                    <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuButton"
+                                    >
+                                        <a class="dropdown-item" href="#"
+                                            >Link 1</a
+                                        >
+                                        <a class="dropdown-item" href="#"
+                                            >Link 2</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- header area end -->
+
+                <div class="main-content-inner">
+                    <!-- Input fields area start -->
+                    <div class="sales-report-area mt-5 mb-2">
+                        <div class="row align-items-center">
+                            <div class="col-sm-6">
+                                <h1 class="dashboard_title">Chat</h1>
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-end">
+                                <button class="new-chat-btn">new Chat</button>
+                            </div>
+                        </div>
+
+                        <!-- Input fields area end -->
+                    </div>
+
+                    <div class="main-chat-section">
+                        <div class="row">
+                            <div class="col-md-4 pr-0">
+                                <div class="chats-panel">
+                                    <div class="search-bar">
+                                        <input
+                                            type="text"
+                                            placeholder="Search Chats"
+                                        />
+                                    </div>
+                                    <div class="chats-contact">
+                                        <div class="contact-box active">
+                                            <img
+                                                src="assets/images/icon/chat-img.png"
+                                                alt=""
+                                            />
+                                            <div class="display-contact">
+                                                <p class="date">Jun 12</p>
+                                                <h3 class="title">
+                                                    David Dobrik
+                                                </h3>
+                                                <h4 class="agency-name">
+                                                    Agency Name
+                                                </h4>
+                                                <p class="message">
+                                                    Hey bro, thanks for coming
+                                                    to the event
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-box">
+                                            <img
+                                                src="assets/images/icon/chat-img.png"
+                                                alt=""
+                                            />
+                                            <div class="display-contact">
+                                                <p class="date">Jun 12</p>
+                                                <h3 class="title">
+                                                    David Dobrik
+                                                </h3>
+                                                <h4 class="agency-name">
+                                                    Agency Name
+                                                </h4>
+                                                <p class="message">
+                                                    Hey bro, thanks for coming
+                                                    to the event
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-box">
+                                            <img
+                                                src="assets/images/icon/chat-img.png"
+                                                alt=""
+                                            />
+                                            <div class="display-contact">
+                                                <p class="date">Jun 12</p>
+                                                <h3 class="title">
+                                                    David Dobrik
+                                                </h3>
+                                                <h4 class="agency-name">
+                                                    Agency Name
+                                                </h4>
+                                                <p class="message">
+                                                    Hey bro, thanks for coming
+                                                    to the event
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-box">
+                                            <img
+                                                src="assets/images/icon/chat-img.png"
+                                                alt=""
+                                            />
+                                            <div class="display-contact">
+                                                <p class="date">Jun 12</p>
+                                                <h3 class="title">
+                                                    David Dobrik
+                                                </h3>
+                                                <h4 class="agency-name">
+                                                    Agency Name
+                                                </h4>
+                                                <p class="message">
+                                                    Hey bro, thanks for coming
+                                                    to the event
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-box">
+                                            <img
+                                                src="assets/images/icon/chat-img.png"
+                                                alt=""
+                                            />
+                                            <div class="display-contact">
+                                                <p class="date">Jun 12</p>
+                                                <h3 class="title">
+                                                    David Dobrik
+                                                </h3>
+                                                <h4 class="agency-name">
+                                                    Agency Name
+                                                </h4>
+                                                <p class="message">
+                                                    Hey bro, thanks for coming
+                                                    to the event
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-box">
+                                            <img
+                                                src="assets/images/icon/chat-img.png"
+                                                alt=""
+                                            />
+                                            <div class="display-contact">
+                                                <p class="date">Jun 12</p>
+                                                <h3 class="title">
+                                                    David Dobrik
+                                                </h3>
+                                                <h4 class="agency-name">
+                                                    Agency Name
+                                                </h4>
+                                                <p class="message">
+                                                    Hey bro, thanks for coming
+                                                    to the event
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-box">
+                                            <img
+                                                src="assets/images/icon/chat-img.png"
+                                                alt=""
+                                            />
+                                            <div class="display-contact">
+                                                <p class="date">Jun 12</p>
+                                                <h3 class="title">
+                                                    David Dobrik
+                                                </h3>
+                                                <h4 class="agency-name">
+                                                    Agency Name
+                                                </h4>
+                                                <p class="message">
+                                                    Hey bro, thanks for coming
+                                                    to the event
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 pl-0">
+                                <div class="chats-right">
+                                    <div class="view-request-area">
+                                        <div class="back-btn">Back</div>
+                                        <div class="dropdown">
+                                            <button
+                                                class="btn"
+                                                type="button"
+                                                id="dropdownMenuButton"
+                                                data-toggle="dropdown"
+                                                aria-haspopup="true"
+                                                aria-expanded="false"
+                                            >
+                                                View Requests
+                                                <img
+                                                    src="assets/images/icon/chat-profile.png"
+                                                    alt=""
+                                                />
+                                            </button>
+                                            <div
+                                                class="dropdown-menu"
+                                                aria-labelledby="dropdownMenuButton"
+                                            >
+                                                <p class="m-0">
+                                                    <b>Active Requests</b>
+                                                </p>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    ><span>Met Gala</span
+                                                    ><span>11/10/2023</span></a
+                                                >
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    ><span>Knics Game</span
+                                                    ><span>11/10/2023</span></a
+                                                >
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    ><span>Met Gala</span
+                                                    ><span>11/10/2023</span></a
+                                                >
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    ><span>Met Gala</span
+                                                    ><span>11/10/2023</span></a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="chat-messages">
+                                        <div class="receive-msg">
+                                            <span
+                                                >Hey, got a question about the
+                                                gala event</span
+                                            >
+                                        </div>
+                                        <div class="request-msg">
+                                            <p class="mb-2">
+                                                <b>New Request!</b>
+                                            </p>
+                                            <p class="mb-2">
+                                                Met Gala - 8 people - $23,000
+                                            </p>
+                                            <a href="">View Request</a>
+                                        </div>
+                                        <div class="sender-msg">
+                                            <span
+                                                >Of course! Just send me their
+                                                name and email and I’ll add them
+                                                to the list!</span
+                                            >
+                                        </div>
+                                        <div class="receive-msg">
+                                            <span
+                                                >Hey, got a question about the
+                                                gala event</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="new-msg">
+                                        <a href=""
+                                            ><img
+                                                src="assets/images/icon/send-gif.png"
+                                                alt=""
+                                        /></a>
+                                        <a href=""
+                                            ><img
+                                                src="assets/images/icon/send-img.png"
+                                                alt=""
+                                        /></a>
+                                        <a href=""
+                                            ><img
+                                                src="assets/images/icon/send-emoji.png"
+                                                alt=""
+                                        /></a>
+                                        <input
+                                            type="text"
+                                            name=""
+                                            id=""
+                                            placeholder="Start a new message"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- main content area end -->
+        </div>
+        <!-- page container area end -->
+
+        <!-- jquery latest version -->
+        <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+        <!-- bootstrap 4 js -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/metisMenu.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+        <script src="assets/js/scripts.js"></script>
+
+        <script>
+            let chatMessages = document.querySelector(".chats-right");
+            let openBtn = document.querySelectorAll(".contact-box");
+            let chatsPanel = document.querySelector(".chats-panel");
+            let backBtn = document.querySelector(".back-btn");
+
+            openBtn.forEach((item) => {
+                item.addEventListener("click", () => {
+                    chatMessages.classList.add("show");
+                    chatsPanel.style.display = "none";
+                });
+            });
+
+            backBtn.addEventListener("click", () => {
+                chatsPanel.style.display = "block";
+                chatMessages.classList.remove("show");
+            });
+        </script>
+    </body>
+</html>

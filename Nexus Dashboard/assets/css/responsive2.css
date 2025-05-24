@@ -1,0 +1,78 @@
+@media screen and (max-width: 1100px) {
+  .navbar .nav-links {
+    display: none;
+  }
+  .navbar .logo {
+    display: none;
+  }
+  .navbar .menu-icon {
+    display: block;
+  }
+  .navbar .menu-icon span {
+    width: 35px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin: 10px;
+  }
+  .sidebar-menu {
+    display: block;
+    position: fixed;
+    background: #405341;
+    top: 0;
+    left: -100%;
+    z-index: 222;
+    width: 230px;
+    height: 100vh;
+    transition: 0.3s ease;
+  }
+  .sidebar-menu.show {
+    left: 0;
+    transition: 0.3s ease;
+  }
+  .sidebar-menu .logo {
+    border-bottom: 1px solid #b5bfa6;
+    padding: 19px;
+    text-align: center;
+    position: relative;
+  }
+  .sidebar-menu .nav-links {
+    padding-top: 75px;
+    height: 90vh;
+    overflow: auto;
+  }
+  .sidebar-menu .nav-links a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+  }
+  .sidebar-menu .nav-links a:hover {
+    background-color: #b5bfa6;
+    color: #405341;
+  }
+  .close-icon {
+    position: absolute;
+    right: 5px;
+  }
+  .close-icon span {
+    width: 25px;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+  }
+  .close-icon .bar1 {
+    transform: rotate(45deg) translate(3px, -3px);
+  }
+  .close-icon .bar2 {
+    transform: rotate(-45deg) translate(4px, 2px);
+  }
+  .navigation {
+    padding: 8px 37px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .download-template-btn a {
+    left: 0;
+  }
+}

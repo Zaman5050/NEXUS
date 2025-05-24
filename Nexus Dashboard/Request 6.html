@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Request</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="shortcut icon"
+            type="image/png"
+            href="assets/images/icon/favicon.ico"
+        />
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="assets/css/default-css.css" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="assets/css/responsive.css" />
+    </head>
+
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">
+                You are using an <strong>outdated</strong> browser. Please
+                <a href="http://browsehappy.com/">upgrade your browser</a> to
+                improve your experience.
+            </p>
+        <![endif]-->
+        <!-- preloader area start -->
+        <div id="preloader">
+            <div class="loader"></div>
+        </div>
+        <!-- preloader area end -->
+        <!-- page container area start -->
+        <div class="page-container">
+            <!-- sidebar menu area start -->
+            <div class="sidebar-menu">
+                <div class="sidebar-header">
+                    <div class="logo">
+                        <a href="index.html"
+                            ><img src="assets/images/icon/logo.png" alt="logo"
+                        /></a>
+                    </div>
+                </div>
+                <div class="main-menu">
+                    <div class="menu-inner">
+                        <nav>
+                            <ul class="metismenu" id="menu">
+                                <li class="">
+                                    <a href="#">
+                                        <img
+                                            class="greenIcon"
+                                            src="assets/images/icon/icon-0.png"
+                                        />
+                                        <img
+                                            class="whiteIcon"
+                                            src="assets/images/icon/icon-00.png"
+                                        />
+                                        <span>dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#">
+                                        <img
+                                            class="greenIcon"
+                                            src="assets/images/icon/icon-01.png"
+                                        />
+                                        <img
+                                            class="whiteIcon"
+                                            src="assets/images/icon/icon-1.png"
+                                        />
+                                        <span>Event Calendar</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#">
+                                        <img
+                                            class="greenIcon"
+                                            src="assets/images/icon/icon-02.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="whiteIcon"
+                                            src="assets/images/icon/icon-2.png"
+                                        />
+                                        <span>Agents</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="assets/images/icon/icon-3.png"
+                                        />
+                                        <span>Clients</span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">
+                                        <img
+                                            class="whiteIcon"
+                                            src="assets/images/icon/icon-4.png"
+                                        />
+                                        <img
+                                            class="greenIcon"
+                                            src="assets/images/icon/icon-04.png"
+                                            alt=""
+                                        />
+                                        <span>Team</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="assets/images/icon/icon-5.png"
+                                        />
+                                        <span>Requests</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="assets/images/icon/icon-6.png"
+                                        /><span>Chat</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="assets/images/icon/icon-7.png"
+                                        />
+                                        <span>Suppliers</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="assets/images/icon/icon-8.png"
+                                        />
+                                        <span>Reporting</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar menu area end -->
+            <!-- main content area start -->
+            <div class="main-content">
+                <!-- header area start -->
+                <div class="header-area">
+                    <div class="row align-items-center">
+                        <!-- nav and search button -->
+                        <div class="col clearfix">
+                            <div class="nav-btn pull-left">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="search-box pull-left"></div>
+                        </div>
+                        <!-- profile info & task notification -->
+                        <div class="col clearfix">
+                            <div class="nav_right_area">
+                                <div class="dropdown">
+                                    <button
+                                        class=""
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        My Account<img
+                                            src="assets/images/icon/logo_header.png"
+                                            alt=""
+                                        />
+                                    </button>
+                                    <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuButton"
+                                    >
+                                        <a class="dropdown-item" href="#"
+                                            >Link 1</a
+                                        >
+                                        <a class="dropdown-item" href="#"
+                                            >Link 2</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- header area end -->
+
+                <div class="main-content-inner">
+                    <!-- Input fields area start -->
+                    <div class="sales-report-area mt-2 mb-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="top-button">
+                                    <a href="#" class="back-button">
+                                        <img
+                                            src="assets/images/icon/back-arrow.png"
+                                            alt="back button"
+                                        />
+                                        <span>Back to requests</span>
+                                    </a>
+                                    <h1 class="dashboard_title">Requests</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="request-detail">
+                        <div class="row" style="gap: 20px 0">
+                            <div class="col-lg-6">
+                                <div class="request-left">
+                                    <div class="request-agent-detail">
+                                        <h4>Agent Name</h4>
+                                        <p class="mb-1">
+                                            jennifer@nexusbooking.com
+                                        </p>
+                                        <p class="mb-1">818-566-8237</p>
+                                        <a href="#">
+                                            <img
+                                                src="assets/images/icon/request-msg-icon.png"
+                                                alt=""
+                                            />
+                                            <span>Message</span>
+                                        </a>
+                                    </div>
+                                    <div class="request-client-detail">
+                                        <h4>Client Request</h4>
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="box">
+                                                    <p
+                                                        class="mb-2 detail-title"
+                                                    >
+                                                        Client
+                                                    </p>
+                                                    <p>-</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="box">
+                                                    <p
+                                                        class="mb-2 detail-title"
+                                                    >
+                                                        Event
+                                                    </p>
+                                                    <p>Knicks Game</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="box">
+                                                    <p
+                                                        class="mb-2 detail-title"
+                                                    >
+                                                        Quantity
+                                                    </p>
+                                                    <p>10</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-3">
+                                            <div class="col-3">
+                                                <div class="box">
+                                                    <p
+                                                        class="mb-2 detail-title"
+                                                    >
+                                                        Date
+                                                    </p>
+                                                    <p>10</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="box">
+                                                    <p
+                                                        class="mb-2 detail-title"
+                                                    >
+                                                        Estimated Budget
+                                                    </p>
+                                                    <p>10</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="notes mt-3">
+                                            <p class="mb-1">NOTES:</p>
+                                            <p>
+                                                He, I’m looking for a VIP box
+                                                for my client, including
+                                                shuttles and a hotel for 3
+                                                nights in Miami
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="request-updated-footer">
+                                        <div class="outer-div">
+                                            <div class="box">
+                                                <span>Status:</span>
+                                                <span class="status2"
+                                                    >Awaiting Quotes</span
+                                                >
+                                            </div>
+                                            <div class="box">
+                                                <span>Assignee:</span>
+                                                <span class="assignee"
+                                                    >YOU</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="request-supplier-quote">
+                                    <div class="view-request-offer">
+                                        <h4>Booking Confirmation</h4>
+                                        <div class="edit-request-offer">
+                                            <div class="box1">
+                                                <h4>Knicks Game</h4>
+                                                <div class="box1-detail">
+                                                    <div>
+                                                        <p class="m-0">
+                                                            Price: $250
+                                                        </p>
+                                                        <p class="m-0">
+                                                            Quantity: 10
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="m-0">
+                                                            Total: $2,500
+                                                        </p>
+                                                        <p class="m-0">
+                                                            Margin: $1,000
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box2">
+                                                <a href="" class="btn"
+                                                    >PREVIEW</a
+                                                >
+                                                <a
+                                                    href=""
+                                                    class="btn"
+                                                    data-toggle="modal"
+                                                    data-target="#exampleModalCenter"
+                                                    >EDIT</a
+                                                >
+                                                <a href="" class="btn">SEND</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h4 class="mb-3">Suppliers</h4>
+                                    <div class="invoice-request">
+                                        <button class="button">Requests</button>
+                                        <button class="button invoice-btn">
+                                            <div class="dot"></div>
+                                            Invoices
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="request-quotes-table requests-supplier-table"
+                                    >
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Supplier</th>
+                                                    <th>Type</th>
+                                                    <th>Quantity</th>
+                                                    <th>Price</th>
+                                                    <th>Quantity</th>
+                                                    <th colspan="2">Total</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Supplier 1</td>
+                                                    <td>Type</td>
+                                                    <td>5</td>
+                                                    <td>$200</td>
+                                                    <td>$1,000</td>
+                                                    <td>$1,000</td>
+                                                    <td
+                                                        align="right"
+                                                        class="pr-0"
+                                                    >
+                                                        <a
+                                                            href=""
+                                                            class="view"
+                                                            data-toggle="modal"
+                                                            data-target="#exampleModalCenter2"
+                                                            >pay</a
+                                                        >
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal pop-up 2 -->
+                <div
+                    class="modal fade view-offer-modal send-payment-modal"
+                    id="exampleModalCenter2"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalCenterTitle"
+                    style="display: none"
+                    aria-hidden="true"
+                >
+                    <div
+                        class="modal-dialog modal-dialog-centered"
+                        role="document"
+                    >
+                        <div class="modal-content">
+                            <div class="title">
+                                <h3 class="made-evolve-heading">Pay Now</h3>
+                            </div>
+                            <div class="modal-bottom">
+                                <div class="card-details">
+                                    <div class="payment-option">
+                                        <div
+                                            class="form-check form-check-inline"
+                                        >
+                                            <input
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="inlineRadioOptions"
+                                                id="paymentOnFile"
+                                                value="Flexible"
+                                            />
+                                            <label
+                                                class="form-check-label file-payment-radio"
+                                                for="paymentOnFile"
+                                                >Payment on file</label
+                                            >
+                                        </div>
+                                        <div
+                                            class="form-check form-check-inline"
+                                        >
+                                            <input
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="inlineRadioOptions"
+                                                id="inlineRadio1"
+                                                value="specific"
+                                                checked=""
+                                            />
+                                            <label
+                                                class="form-check-label credit-card-radio"
+                                                for="inlineRadio1"
+                                                >New Credit Card</label
+                                            >
+                                        </div>
+                                        <div
+                                            class="form-check form-check-inline ml-4"
+                                        >
+                                            <input
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="inlineRadioOptions"
+                                                id="inlineRadio2"
+                                                value="Flexible"
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="inlineRadio2"
+                                                >ACH</label
+                                            >
+                                        </div>
+                                    </div>
+                                    <p class="payment-descrip">
+                                        Maximum payment for credit card is
+                                        $5,000. A service fee of 3.5% will be
+                                        applied. Bookings over $5,000 require
+                                        ACH.
+                                    </p>
+                                    <div class="credit-card-details">
+                                        <div class="form-group pt-4 mb-4">
+                                            <label for="" class="labels"
+                                                >Name on Card</label
+                                            >
+                                            <input
+                                                type="text"
+                                                class="form-control inputs"
+                                                placeholder="First and Last Name"
+                                            />
+                                        </div>
+                                        <div class="card-spec">
+                                            <div class="box1 form-group">
+                                                <label for="" class="labels"
+                                                    >Credit Card</label
+                                                >
+                                                <input
+                                                    type="text"
+                                                    class="form-control inputs"
+                                                    placeholder="XXXXXXXXXXXX"
+                                                />
+                                            </div>
+                                            <div class="box2 form-group">
+                                                <label for="" class="labels"
+                                                    >Month</label
+                                                >
+                                                <input
+                                                    type="text"
+                                                    class="form-control inputs"
+                                                    placeholder="XX"
+                                                />
+                                            </div>
+                                            <div class="box3 form-group">
+                                                <label for="" class="labels"
+                                                    >Year</label
+                                                >
+                                                <input
+                                                    type="text"
+                                                    class="form-control inputs"
+                                                    placeholder="XX"
+                                                />
+                                            </div>
+                                            <div class="box4 form-group">
+                                                <label for="" class="labels"
+                                                    >CVC</label
+                                                >
+                                                <input
+                                                    type="text"
+                                                    class="form-control inputs"
+                                                    placeholder="CVC"
+                                                />
+                                            </div>
+                                            <div class="box5 form-group">
+                                                <label for="" class="labels"
+                                                    >Zip</label
+                                                >
+                                                <input
+                                                    type="text"
+                                                    class="form-control inputs"
+                                                    placeholder="XXXXX"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="save-card">
+                                            <label class="checkbox-container"
+                                                >Save card for future booking
+                                                for this client
+                                                <input type="checkbox" />
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="payment-on-file">
+                                        <div class="box">
+                                            <div class="box-left">
+                                                <img
+                                                    src="assets/images/icon/logos_visa.png"
+                                                    alt=""
+                                                />
+                                                <div>
+                                                    <p>Jordan Rothstein</p>
+                                                    <p class="card-no">
+                                                        XXXXXXXXX2344
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="box-right">
+                                                <input
+                                                    class="form-check-input"
+                                                    type="radio"
+                                                    name="exampleRadios"
+                                                    id="modal-radio"
+                                                />
+                                                <label
+                                                    class="form-check-label"
+                                                    for="modal-radio"
+                                                    >Primary
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-end">
+                                <div class="total">
+                                    <p>Subtotal</p>
+                                    <p>$2,000</p>
+                                </div>
+                                <div class="total add-markup">
+                                    <a href="">Add additonal markup</a>
+                                    <input type="text" name="" id="" />
+                                </div>
+                                <div class="total">
+                                    <p>Total</p>
+                                    <p>$2,000</p>
+                                </div>
+
+                                <div class="submit-buttons">
+                                    <a href="" class="btn approval-btn"
+                                        >pay now</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- main content area end -->
+        </div>
+        <!-- page container area end -->
+
+        <!-- jquery latest version -->
+        <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+        <!-- bootstrap 4 js -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/metisMenu.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+        <script src="assets/js/scripts.js"></script>
+        <script>
+            $(".file-payment-radio").click(() => {
+                document.querySelector(".credit-card-details").style.display =
+                    "none";
+                document.querySelector(".payment-on-file").style.display =
+                    "block";
+            });
+            $(".credit-card-radio").click(() => {
+                document.querySelector(".credit-card-details").style.display =
+                    "block";
+                document.querySelector(".payment-on-file").style.display =
+                    "none";
+            });
+        </script>
+    </body>
+</html>

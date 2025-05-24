@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Clients</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="shortcut icon"
+            type="image/png"
+            href="assets/images/icon/favicon.ico"
+        />
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="assets/css/default-css.css" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="assets/css/style2.css" />
+        <link rel="stylesheet" href="assets/css/responsive2.css" />
+        <link
+            rel="stylesheet"
+            href="assets/jquery-nice-select-1.1.0/css/nice-select.css"
+        />
+        <!-- Flatpickr -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+        />
+    </head>
+
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">
+                You are using an <strong>outdated</strong> browser. Please
+                <a href="http://browsehappy.com/">upgrade your browser</a> to
+                improve your experience.
+            </p>
+        <![endif]-->
+        <!-- preloader area start -->
+        <div id="preloader">
+            <div class="loader"></div>
+        </div>
+        <!-- preloader area end -->
+        <!-- navbar start -->
+        <nav class="navigation">
+            <div class="navbar">
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="logo">
+                    <a href="#"
+                        ><img src="assets/images/icon/logo.png" alt="nexus"
+                    /></a>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Clients</a>
+                    </li>
+                    <li>
+                        <a href="#">Event Calendar</a>
+                    </li>
+                    <li>
+                        <a href="#">Sales</a>
+                    </li>
+                    <li>
+                        <a href="#">Team</a>
+                    </li>
+                    <li>
+                        <a href="#">Requests</a>
+                    </li>
+                    <li>
+                        <a href="#">Profile</a>
+                    </li>
+                </ul>
+                <div class="dropdown">
+                    <button
+                        class="dropdown-button"
+                        type="button"
+                        id="dropdownMenuButton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        <span> Jennifer</span>
+                        <img src="assets/images/icon/profile.png" alt="" />
+                    </button>
+                    <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton"
+                    >
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar for small screens -->
+            <div class="sidebar-menu">
+                <div class="logo">
+                    <div class="close-icon">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                    </div>
+                    <a href="#"
+                        ><img src="assets/images/icon/logo.png" alt=""
+                    /></a>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li>
+                        <a class="active" href="#">Clients</a>
+                    </li>
+                    <li>
+                        <a href="#">Event Calendar</a>
+                    </li>
+                    <li>
+                        <a href="#">Sales</a>
+                    </li>
+                    <li>
+                        <a href="#">Team</a>
+                    </li>
+                    <li>
+                        <a href="#">Requests</a>
+                    </li>
+                    <li>
+                        <a href="#">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- navbar area end -->
+
+        <!-- main content area -->
+        <div class="main-content-sect pb-5">
+            <div class="row pb-3">
+                <div class="col-sm-6">
+                    <h1 class="dashboard_title">Clients</h1>
+                </div>
+                <div class="col-sm-6 d-flex justify-content-end">
+                    <div class="client-button-area">
+                        <a
+                            class="add-btn"
+                            data-toggle="modal"
+                            data-target="#exampleModalCenter"
+                            >Add new client</a
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="sales-report-area mt-4">
+                <div class="row" style="gap: 30px 0">
+                    <div class="col-md-3">
+                        <div class="input-field">
+                            <input
+                                type="text"
+                                class="form-control input-search-icon"
+                                placeholder="Search Clients"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="input-field">
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Filter by Location"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="input-field">
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Filter by interest"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="agents-sect mt-5">
+                <div class="top_agents_sect">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Current name</th>
+                                <th scope="col">email</th>
+                                <th scope="col">events</th>
+                                <th scope="col">volume</th>
+                                <th scope="col">base city</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">Jordan Rothstein</td>
+                                <td>sarah.thompson@gmail.com</td>
+                                <td>12</td>
+                                <td>$35400</td>
+                                <td>Los Angeles</td>
+                                <td>
+                                    <a href="#" class="view_button">View</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Jordan Rothstein</td>
+                                <td>sarah.thompson@gmail.com</td>
+                                <td>12</td>
+                                <td>$35400</td>
+                                <td>Los Angeles</td>
+                                <td>
+                                    <a href="#" class="view_button">View</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Jordan Rothstein</td>
+                                <td>sarah.thompson@gmail.com</td>
+                                <td>12</td>
+                                <td>$35400</td>
+                                <td>Los Angeles</td>
+                                <td>
+                                    <a href="#" class="view_button">View</a>
+                                </td>
+                            </tr>
+
+                            <tr style="height: 50px"></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Modal pop-up -->
+        <div
+            class="modal fade add-agent-modal add-client-modal"
+            id="exampleModalCenter"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+        >
+            <div
+                class="modal-dialog modal-dialog-centered modal-lg"
+                role="document"
+            >
+                <div class="modal-content">
+                    <div class="modal-top">
+                        <h4>Add Client</h4>
+                    </div>
+                    <div class="modal-bottom">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <ul
+                                    class="nav nav-tabs"
+                                    id="myTab"
+                                    role="tablist"
+                                >
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link active"
+                                            id="home-tab"
+                                            data-toggle="tab"
+                                            href="#contact-info"
+                                            role="tab"
+                                            aria-controls="home"
+                                            aria-selected="true"
+                                            ><img
+                                                src="assets/images/icon/contact-icon.png"
+                                                alt=""
+                                            />Contact Info</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link"
+                                            id="profile-tab"
+                                            data-toggle="tab"
+                                            href="#relationships"
+                                            role="tab"
+                                            aria-controls="profile"
+                                            aria-selected="false"
+                                            ><img
+                                                src="assets/images/icon/relationship-icon.png"
+                                                alt=""
+                                            />Relationships</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link"
+                                            id="contact-tab"
+                                            data-toggle="tab"
+                                            href="#important-dates"
+                                            role="tab"
+                                            aria-controls="contact"
+                                            aria-selected="false"
+                                            ><img
+                                                src="assets/images/icon/dates-icon.png"
+                                                alt=""
+                                            />Important Dates</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link"
+                                            id="contact-tab"
+                                            data-toggle="tab"
+                                            href="#event-preferences"
+                                            role="tab"
+                                            aria-controls="contact"
+                                            aria-selected="false"
+                                            ><img
+                                                src="assets/images/icon/event-icon.png"
+                                                alt=""
+                                            />Event Preferences</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link"
+                                            id="contact-tab"
+                                            data-toggle="tab"
+                                            href="#passport-info"
+                                            role="tab"
+                                            aria-controls="contact"
+                                            aria-selected="false"
+                                            ><img
+                                                src="assets/images/icon/passport-icon.png"
+                                                alt=""
+                                            />Passport Info</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link"
+                                            id="contact-tab"
+                                            data-toggle="tab"
+                                            href="#payment-info"
+                                            role="tab"
+                                            aria-controls="contact"
+                                            aria-selected="false"
+                                            ><img
+                                                src="assets/images/icon/payment-icon.png"
+                                                alt=""
+                                            />Payment Info</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link change-text"
+                                            id="contact-tab"
+                                            data-toggle="tab"
+                                            href="#notes"
+                                            role="tab"
+                                            aria-controls="contact"
+                                            aria-selected="false"
+                                            ><img
+                                                src="assets/images/icon/notes-icon.png"
+                                                alt=""
+                                            />Notes</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-8 p-0">
+                                <div class="tab-content" id="myTabContent">
+                                    <div
+                                        class="tab-pane fade show active"
+                                        id="contact-info"
+                                        role="tabpanel"
+                                        aria-labelledby="home-tab"
+                                    >
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="firstName"
+                                                    >First Name
+                                                    <span class="required-star"
+                                                        >*</span
+                                                    ></label
+                                                >
+                                                <input
+                                                    type="text"
+                                                    class="form-control input"
+                                                    id="firstName"
+                                                    placeholder="First Name"
+                                                />
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="lastName"
+                                                    >Last Name
+                                                    <span class="required-star"
+                                                        >*</span
+                                                    ></label
+                                                >
+                                                <input
+                                                    type="text"
+                                                    class="form-control input"
+                                                    id="lastName"
+                                                    placeholder="Last Name"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="email"
+                                                    >Email
+                                                    <span class="required-star"
+                                                        >*</span
+                                                    ></label
+                                                >
+                                                <input
+                                                    type="email"
+                                                    class="form-control input"
+                                                    id="email"
+                                                    placeholder="Email"
+                                                />
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="phoneNumber"
+                                                    >Phone Number</label
+                                                >
+                                                <input
+                                                    type="tel"
+                                                    class="form-control input"
+                                                    id="phoneNumber"
+                                                    placeholder="Phone Number"
+                                                />
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <label for="lastName"
+                                                    >City</label
+                                                >
+                                                <input
+                                                    type="text"
+                                                    class="form-control input"
+                                                    id="lastName"
+                                                    placeholder="City"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="tab-pane fade"
+                                        id="relationships"
+                                        role="tabpanel"
+                                        aria-labelledby="profile-tab"
+                                    >
+                                        <div class="form-row">
+                                            <div class="form-group col-md-4">
+                                                <label>Relationships </label>
+                                                <select
+                                                    name=""
+                                                    id=""
+                                                    class="select-options"
+                                                >
+                                                    <option value="">
+                                                        Ex Child/Sibling
+                                                    </option>
+                                                    <option value="">
+                                                        Sibling
+                                                    </option>
+                                                    <option value="">
+                                                        Child
+                                                    </option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-8">
+                                                <label>Name</label>
+                                                <div
+                                                    class="d-flex align-items-center"
+                                                >
+                                                    <input
+                                                        type="text"
+                                                        class="form-control input"
+                                                        placeholder="Type an existing or new client"
+                                                    />
+                                                    <a href="" class="ml-2"
+                                                        ><img
+                                                            src="assets/images/icon/bin-icon.png"
+                                                            alt=""
+                                                    /></a>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <a
+                                                    href="#"
+                                                    class="add-relation-btn"
+                                                    >Add Relationship</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="tab-pane fade important-dates"
+                                        id="important-dates"
+                                        role="tabpanel"
+                                        aria-labelledby="contact-tab"
+                                    >
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label>Birthday</label>
+                                                <input
+                                                    type="date"
+                                                    class="form-control input custom-picker"
+                                                    placeholder="Ex 10/23/2023"
+                                                />
+                                                <img
+                                                    class="input-date-icon"
+                                                    src="assets/images/icon/input-date.png"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label>Anniversary</label>
+                                                <input
+                                                    type="date"
+                                                    placeholder="Ex 10/23/2023"
+                                                    class="form-control input custom-picker"
+                                                />
+                                                <img
+                                                    class="input-date-icon"
+                                                    src="assets/images/icon/input-date.png"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <a
+                                                    href="#"
+                                                    class="add-relation-btn"
+                                                    >Add Date</a
+                                                >
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label>Add Custom Date</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control input"
+                                                    placeholder="Name of event"
+                                                />
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label>Date</label>
+                                                <input
+                                                    type="date"
+                                                    class="form-control input custom-picker"
+                                                    placeholder="Ex 10/23/2023"
+                                                />
+                                                <img
+                                                    class="input-date-icon"
+                                                    src="assets/images/icon/input-date.png"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="tab-pane fade important-dates passport-info"
+                                        id="passport-info"
+                                        role="tabpanel"
+                                        aria-labelledby="contact-tab"
+                                    >
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label
+                                                    >Full Name as it
+                                                    appears</label
+                                                >
+                                                <input
+                                                    type="text"
+                                                    class="form-control input"
+                                                />
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label>Passport Number</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control input"
+                                                />
+                                            </div>
+
+                                            <div class="form-group col-md-6">
+                                                <label>Country of issue</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control input"
+                                                />
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="mb-3"
+                                                    >Gender</label
+                                                >
+                                                <div>
+                                                    <div
+                                                        class="form-check form-check-inline"
+                                                    >
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="inlineRadioOptions"
+                                                            id="inlineRadio1"
+                                                            value="option1"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="inlineRadio1"
+                                                            >F</label
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="form-check form-check-inline"
+                                                    >
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="inlineRadioOptions"
+                                                            id="inlineRadio2"
+                                                            value="option2"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="inlineRadio2"
+                                                            >M</label
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="form-check form-check-inline"
+                                                    >
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="inlineRadioOptions"
+                                                            id="inlineRadio3"
+                                                            value="option2"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="inlineRadio3"
+                                                            >X</label
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label>Date of issue</label>
+                                                <input
+                                                    type="date"
+                                                    class="form-control input custom-picker"
+                                                    placeholder="Ex 10/23/2023"
+                                                />
+                                                <img
+                                                    class="input-date-icon"
+                                                    src="assets/images/icon/input-date.png"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label>Date of issue</label>
+                                                <input
+                                                    type="date"
+                                                    class="form-control input custom-picker"
+                                                    placeholder="Ex 10/23/2023"
+                                                />
+                                                <img
+                                                    class="input-date-icon"
+                                                    src="assets/images/icon/input-date.png"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label>Place of birth</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control input"
+                                                />
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label>Nationality</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control input"
+                                                />
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label>Citizenship</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control input"
+                                                />
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label>Passport Photo</label>
+                                                <input
+                                                    type="file"
+                                                    class="form-control input"
+                                                />
+                                                <button
+                                                    class="upload-passport-img"
+                                                >
+                                                    Upload image
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="tab-pane fade notes-tab"
+                                        id="notes"
+                                        role="tabpanel"
+                                        aria-labelledby="contact-tab"
+                                    >
+                                        <div class="form-group">
+                                            <label
+                                                for="exampleFormControlTextarea1"
+                                                >Notes</label
+                                            >
+                                            <textarea
+                                                class="form-control"
+                                                id="exampleFormControlTextarea1"
+                                                rows="10"
+                                            ></textarea>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="tab-pane fade important-dates passport-info"
+                                        id="event-preferences"
+                                        role="tabpanel"
+                                        aria-labelledby="contact-tab"
+                                    >
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label>Seat Preference</label>
+                                                <div>
+                                                    <div
+                                                        class="form-check form-check-inline"
+                                                    >
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="inlineRadioOptions"
+                                                            id="window"
+                                                            value=""
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="window"
+                                                            >Window</label
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="form-check form-check-inline"
+                                                    >
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="inlineRadioOptions"
+                                                            id="aisle"
+                                                            value=""
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="aisle"
+                                                            >Aisle</label
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label>Bed Preference</label>
+                                                <div>
+                                                    <div
+                                                        class="form-check form-check-inline"
+                                                    >
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="inlineRadioOptions"
+                                                            id="king-bed"
+                                                            value=""
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="king-bed"
+                                                            >King</label
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="form-check form-check-inline"
+                                                    >
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="inlineRadioOptions"
+                                                            id="2-double-queen"
+                                                            value=""
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="2-double-queen"
+                                                            >2
+                                                            Double/Queen</label
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-8">
+                                                <label>Meal Preference</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control input"
+                                                    placeholder="Enter"
+                                                />
+                                            </div>
+
+                                            <div class="form-group col-md-12">
+                                                <label class="mb-3"
+                                                    >Hotel Preference</label
+                                                >
+                                                <div>
+                                                    <div
+                                                        class="form-check form-check-inline"
+                                                    >
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="inlineRadioOptions"
+                                                            id="economy"
+                                                            value="option1"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="economy"
+                                                            >Economy</label
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="form-check form-check-inline"
+                                                    >
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="inlineRadioOptions"
+                                                            id="moderate"
+                                                            value="option2"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="moderate"
+                                                            >Moderate</label
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="form-check form-check-inline"
+                                                    >
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="inlineRadioOptions"
+                                                            id="luxury"
+                                                            value="option3"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="luxury"
+                                                            >Luxury</label
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="form-check form-check-inline"
+                                                    >
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="inlineRadioOptions"
+                                                            id="botique"
+                                                            value="option4"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="botique"
+                                                            >Botique</label
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <label class="mb-3"
+                                                    >Vibe Preference</label
+                                                >
+
+                                                <div class="form-row">
+                                                    <div
+                                                        class="form-check col-md-4"
+                                                    >
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="inlineRadioOptions"
+                                                            id="inlineRadio01"
+                                                            value="option01"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="inlineRadio01"
+                                                            >Romantic</label
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="form-check col-md-4"
+                                                    >
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="inlineRadioOptions"
+                                                            id="inlineRadio02"
+                                                            value="option2"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="inlineRadio02"
+                                                            >Rest and
+                                                            Relaxation</label
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="form-check col-md-4"
+                                                    >
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="inlineRadioOptions"
+                                                            id="inlineRadio03"
+                                                            value="option3"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="inlineRadio03"
+                                                            >off the beaten
+                                                            path</label
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div
+                                                        class="form-check col-md-4"
+                                                    >
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="inlineRadioOptions"
+                                                            id="inlineRadio04"
+                                                            value="option04"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="inlineRadio04"
+                                                            >Party</label
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="form-check col-md-4"
+                                                    >
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="inlineRadioOptions"
+                                                            id="inlineRadio5"
+                                                            value="option05"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="inlineRadio5"
+                                                            >Local
+                                                            Culture</label
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="form-check col-md-4"
+                                                    >
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="inlineRadioOptions"
+                                                            id="inlineRadio6"
+                                                            value="option06"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="inlineRadio6"
+                                                            >Family
+                                                            Friendly</label
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div
+                                                        class="form-check col-md-4"
+                                                    >
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="inlineRadioOptions"
+                                                            id="inlineRadio07"
+                                                            value="option07"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="inlineRadio07"
+                                                            >Food and
+                                                            Wine</label
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="form-check col-md-4"
+                                                    >
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="inlineRadioOptions"
+                                                            id="inlineRadio8"
+                                                            value="option8"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="inlineRadio8"
+                                                            >Multigenerational</label
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="form-check col-md-4"
+                                                    >
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="inlineRadioOptions"
+                                                            id="inlineRadio9"
+                                                            value="option09"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="inlineRadio9"
+                                                            >Adventure</label
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <label class="mb-3"
+                                                    >Activity Preference</label
+                                                >
+
+                                                <div class="form-row">
+                                                    <div
+                                                        class="form-check col-md-4"
+                                                    >
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="inlineRadioOptions"
+                                                            id="inlineRadio10"
+                                                            value="option01"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="inlineRadio10"
+                                                            >Beach and
+                                                            Water</label
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="form-check col-md-4"
+                                                    >
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="inlineRadioOptions"
+                                                            id="inlineRadio11"
+                                                            value="option2"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="inlineRadio11"
+                                                            >Gambling</label
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="form-check col-md-4"
+                                                    >
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="inlineRadioOptions"
+                                                            id="inlineRadio12"
+                                                            value="option3"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="inlineRadio12"
+                                                            >Scuba</label
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div
+                                                        class="form-check col-md-4"
+                                                    >
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="inlineRadioOptions"
+                                                            id="inlineRadio13"
+                                                            value="option04"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="inlineRadio13"
+                                                            >Adventure</label
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="form-check col-md-4"
+                                                    >
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="inlineRadioOptions"
+                                                            id="inlineRadio14"
+                                                            value="option05"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="inlineRadio14"
+                                                            >Golfing</label
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="form-check col-md-4"
+                                                    >
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="inlineRadioOptions"
+                                                            id="inlineRadio15"
+                                                            value="option06"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="inlineRadio15"
+                                                            >Nightlife</label
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-end">
+                        <button
+                            type="button"
+                            class="btn"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            Cancel
+                        </button>
+                        <button
+                            type="button"
+                            class="btn edit-btn save-client-btn"
+                        >
+                            Next
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jquery latest version -->
+        <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+        <!-- bootstrap 4 js -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/metisMenu.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+        <script src="assets/js/scripts.js"></script>
+
+        <!-- jquery for Nice Select -->
+        <script src="assets/jquery-nice-select-1.1.0/js/jquery.js"></script>
+        <script src="assets/jquery-nice-select-1.1.0/js/jquery.nice-select.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+        <script>
+            $(document).ready(function () {
+                $(".select-options").niceSelect();
+            });
+            // Flatpickr plugin
+            $(".custom-picker").flatpickr({
+                dateFormat: "d-m-y",
+            });
+            let changeText = document.querySelector(".change-text");
+            let saveClientBtn = document.querySelector(".save-client-btn");
+            changeText.addEventListener("click", () => {
+                saveClientBtn.innerText = "SAVE client";
+            });
+        </script>
+        <script src="assets/js/responsive.js"></script>
+    </body>
+</html>

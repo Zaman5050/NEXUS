@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Request</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/default-css.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body>
+  <!--[if lt IE 8]>
+            <p class="browserupgrade">
+                You are using an <strong>outdated</strong> browser. Please
+                <a href="http://browsehappy.com/">upgrade your browser</a> to
+                improve your experience.
+            </p>
+        <![endif]-->
+  <!-- preloader area start -->
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+  <!-- preloader area end -->
+  <!-- page container area start -->
+  <div class="page-container">
+    <!-- sidebar menu area start -->
+    <div class="sidebar-menu">
+      <div class="sidebar-header">
+        <div class="logo">
+          <a href="index.html"><img src="assets/images/icon/logo.png" alt="logo" /></a>
+        </div>
+      </div>
+      <div class="main-menu">
+        <div class="menu-inner">
+          <nav>
+            <ul class="metismenu" id="menu">
+              <li class="">
+                <a href="#">
+                  <img class="greenIcon" src="assets/images/icon/icon-0.png" />
+                  <img class="whiteIcon" src="assets/images/icon/icon-00.png" />
+                  <span>dashboard</span>
+                </a>
+              </li>
+              <li class="">
+                <a href="#">
+                  <img class="greenIcon" src="assets/images/icon/icon-01.png" />
+                  <img class="whiteIcon" src="assets/images/icon/icon-1.png" />
+                  <span>Event Calendar</span>
+                </a>
+              </li>
+              <li class="">
+                <a href="#">
+                  <img class="greenIcon" src="assets/images/icon/icon-02.png" alt="" />
+                  <img class="whiteIcon" src="assets/images/icon/icon-2.png" />
+                  <span>Agents</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/images/icon/icon-3.png" />
+                  <span>Clients</span>
+                </a>
+              </li>
+              <li class="active">
+                <a href="#">
+                  <img class="whiteIcon" src="assets/images/icon/icon-4.png" />
+                  <img class="greenIcon" src="assets/images/icon/icon-04.png" alt="" />
+                  <span>Team</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/images/icon/icon-5.png" />
+                  <span>Requests</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <img src="assets/images/icon/icon-6.png" /><span>Chat</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/images/icon/icon-7.png" />
+                  <span>Suppliers</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/images/icon/icon-8.png" />
+                  <span>Reporting</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- sidebar menu area end -->
+    <!-- main content area start -->
+    <div class="main-content">
+      <!-- header area start -->
+      <div class="header-area">
+        <div class="row align-items-center">
+          <!-- nav and search button -->
+          <div class="col clearfix">
+            <div class="nav-btn pull-left">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="search-box pull-left"></div>
+          </div>
+          <!-- profile info & task notification -->
+          <div class="col clearfix">
+            <div class="nav_right_area">
+              <div class="dropdown">
+                <button class="" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  My Account<img src="assets/images/icon/logo_header.png" alt="" />
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Link 1</a>
+                  <a class="dropdown-item" href="#">Link 2</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- header area end -->
+
+      <div class="main-content-inner">
+        <!-- Input fields area start -->
+        <div class="sales-report-area mt-2 mb-5">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="top-button">
+                <a href="#" class="back-button">
+                  <img src="assets/images/icon/back-arrow.png" alt="back button" />
+                  <span>Back to requests</span>
+                </a>
+                <h1 class="dashboard_title">Requests</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="request-detail" style="max-width: 911px; margin: auto;">
+          <div class="request-left">
+            <div class="request-header">
+              <p># Suppliers have quoted this request</p>
+              <a href="#" class="view" data-toggle="modal" data-target="#exampleModalCenter">View all quotes</a>
+            </div>
+            <div class="request-bottom">
+              <div class="box box1">
+                <h4>Agent</h4>
+                <div class="text">
+                  <h3>Submitted by</h3>
+                  <p>Jennifer Gomez</p>
+                </div>
+                <div class="text">
+                  <h3>Company</h3>
+                  <p>The Agency</p>
+                </div>
+                <div class="text">
+                  <h3>email</h3>
+                  <p>jennifer@theagency.com</p>
+                </div>
+                <div class="text">
+                  <h3>Phone number</h3>
+                  <p>818-566-8237</p>
+                </div>
+              </div>
+              <div class="box box2">
+                <h4>Client Request</h4>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="text">
+                      <h3>Client Name</h3>
+                      <p>Alex Rodriguez</p>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="text">
+                      <h3>Event</h3>
+                      <p>Knicks Game</p>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="text">
+                      <h3>Date</h3>
+                      <p>1/10/23</p>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="text">
+                      <h3>Quantity</h3>
+                      <p>10</p>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="text">
+                      <h3>Estimatd budget</h3>
+                      <p>$34000</p>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="text">
+                      <h3>ticket type</h3>
+                      <p>VIP</p>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="text">
+                      <h3>Special requests</h3>
+                      <p>
+                        He, I’m looking for a VIP
+                        box for my client, including
+                        shuttles and a hotel for 3
+                        nights in Miami
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="request-footer">
+              <div class="outer-div">
+                <div class="box">
+                  <span>Status:</span>
+                  <span class="status">pending</span>
+                </div>
+                <div class="box">
+                  <span>Assignee:</span>
+                  <span class="status">admin</span>
+                </div>
+              </div>
+              <div class="req-btns justify-content-end">
+                <span>Offer:</span>
+                <a type="button" class="btn">Approve offer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal pop-up -->
+      <div class="modal fade quotes-modal" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <h4>All Supplier Quotes</h4>
+            <div class="modal-bottom">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Supplier</th>
+                    <th>Event</th>
+                    <th>Ticket Type</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Supplier 1</td>
+                    <td>The Knicks</td>
+                    <td>VIP</td>
+                    <td>5</td>
+                    <td>$200</td>
+                    <td>$1,000</td>
+                    <td>
+                      <a href="#" class="select">select</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Supplier 1</td>
+                    <td>The Knicks</td>
+                    <td>VIP</td>
+                    <td>5</td>
+                    <td>$200</td>
+                    <td>$1,000</td>
+                    <td>
+                      <a href="#" class="select">select</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Supplier 1</td>
+                    <td>The Knicks</td>
+                    <td>VIP</td>
+                    <td>5</td>
+                    <td>$200</td>
+                    <td>$1,000</td>
+                    <td>
+                      <a href="#" class="select">select</a>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main content area end -->
+  </div>
+  <!-- page container area end -->
+
+  <!-- jquery latest version -->
+  <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+  <!-- bootstrap 4 js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/metisMenu.min.js"></script>
+  <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+  <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

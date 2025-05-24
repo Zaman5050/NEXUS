@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Request</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="shortcut icon"
+            type="image/png"
+            href="assets/images/icon/favicon.ico"
+        />
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="assets/css/default-css.css" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="assets/css/style2.css" />
+        <link rel="stylesheet" href="assets/css/responsive2.css" />
+        <link
+            rel="stylesheet"
+            href="assets/jquery-nice-select-1.1.0/css/nice-select.css"
+        />
+        <!-- Flatpickr -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+        />
+    </head>
+
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">
+                You are using an <strong>outdated</strong> browser. Please
+                <a href="http://browsehappy.com/">upgrade your browser</a> to
+                improve your experience.
+            </p>
+        <![endif]-->
+        <!-- preloader area start -->
+        <div id="preloader">
+            <div class="loader"></div>
+        </div>
+        <!-- preloader area end -->
+        <!-- navbar start -->
+        <nav class="navigation">
+            <div class="navbar">
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="logo">
+                    <a href="#"
+                        ><img src="assets/images/icon/logo.png" alt="nexus"
+                    /></a>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Requests</a>
+                    </li>
+                    <li>
+                        <a href="#">Sales</a>
+                    </li>
+                    <li>
+                        <a href="#">Chat</a>
+                    </li>
+                    <li>
+                        <a href="#">Profile</a>
+                    </li>
+                </ul>
+                <div class="dropdown">
+                    <button
+                        class="dropdown-button"
+                        type="button"
+                        id="dropdownMenuButton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        <div class="profile-switch">
+                            <p>Jennifer</p>
+                            <p class="switch-text">Switch Profile</p>
+                        </div>
+
+                        <img src="assets/images/icon/profile.png" alt="" />
+                    </button>
+                    <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton"
+                    >
+                        <a class="dropdown-item current" href="#"
+                            ><img
+                                class="profile-image"
+                                src="assets/images/icon/supplier-profile.png"
+                                alt=""
+                            />Supplier Profile</a
+                        >
+                        <a class="dropdown-item" href="#"
+                            ><img
+                                class="profile-image"
+                                src="assets/images/icon/profile.png"
+                                alt=""
+                            />Agent Profile</a
+                        >
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar for small screens -->
+            <div class="sidebar-menu">
+                <div class="logo">
+                    <div class="close-icon">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                    </div>
+                    <a href="#"
+                        ><img src="assets/images/icon/logo.png" alt=""
+                    /></a>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li>
+                        <a class="active" href="#">Requests</a>
+                    </li>
+                    <li>
+                        <a href="#">Sales</a>
+                    </li>
+                    <li>
+                        <a href="#">Chat</a>
+                    </li>
+                    <li>
+                        <a href="#">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- navbar area end -->
+
+        <!-- main content area -->
+        <div class="main-content-sect pb-5">
+            <div class="sales-report-area mb-4">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="top-button">
+                            <a href="#" class="back-button">
+                                <img
+                                    src="assets/images/icon/back-arrow.png"
+                                    alt="back button"
+                                />
+                                <span>Back to requests</span>
+                            </a>
+                            <h1 class="dashboard_title">Requests</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="request-detail">
+                <div class="row" style="gap: 20px 0">
+                    <div class="col-lg-6">
+                        <div class="request-left">
+                            <div class="request-agent-detail">
+                                <h4 class="mb-2">Sarah Geiser</h4>
+                                <p class="mb-1">jennifer@nexusbooking.com</p>
+                                <p class="mb-1">818-566-8237</p>
+                                <a href="#">
+                                    <img
+                                        src="assets/images/icon/request-msg-icon.png"
+                                        alt=""
+                                    />
+                                    <span>Message</span>
+                                </a>
+                            </div>
+                            <div class="request-client-detail">
+                                <h4 class="mb-2">Client Request</h4>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <p class="mb-2 detail-title">
+                                                Event
+                                            </p>
+                                            <p class="mb-2">-</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <p class="mb-2 detail-title">
+                                                Date
+                                            </p>
+                                            <p class="mb-2">Knicks Game</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <p class="mb-2 detail-title">
+                                                Budget
+                                            </p>
+                                            <p class="mb-2">10</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4">
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <p class="mb-2 detail-title">
+                                                Ticket TYpe
+                                            </p>
+                                            <p class="mb-2">10</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <p class="mb-2 detail-title">
+                                                Quantity
+                                            </p>
+                                            <p class="mb-2">10</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="notes mt-4">
+                                    <p class="mb-1">NOTES:</p>
+                                    <p>
+                                        He, I’m looking for a VIP box for my
+                                        client, including shuttles and a hotel
+                                        for 3 nights in Miami
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="request-updated-footer">
+                                <div class="outer-div">
+                                    <div class="box">
+                                        <span>Status:</span>
+                                        <span
+                                            class="status2"
+                                            style="width: 97px"
+                                            >pending</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="send-offer-supplier-view">
+                            <div class="view-request-offer">
+                                <h4 class="made-evolve-heading">Offer</h4>
+                                <div class="edit-request-offer">
+                                    <div class="box1">
+                                        <h4 class="made-evolve-heading mb-2">
+                                            Knicks Game
+                                        </h4>
+                                        <div class="box1-detail">
+                                            <div>
+                                                <p class="m-0">Price: $250</p>
+                                                <p class="m-0">Quantity: 10</p>
+                                            </div>
+                                            <div>
+                                                <p class="m-0">Total: $2,500</p>
+                                                <p class="m-0">
+                                                    Margin: $1,000
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box2">
+                                        <a href="" class="btn">PREVIEW</a>
+                                        <a
+                                            href=""
+                                            class="btn"
+                                            data-toggle="modal"
+                                            data-target="#exampleModalCenter"
+                                            >SEND TO CLIENT</a
+                                        >
+                                        <a
+                                            href=""
+                                            data-toggle="modal"
+                                            data-target="#exampleModalCenter2"
+                                            class="btn"
+                                            >APPROVE</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message-button">
+                                <a href="" class="msg-btn">
+                                    <img
+                                        src="assets/images/icon/request-msg-icon.png"
+                                        alt=""
+                                    />
+                                    <span>Message</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal (send to client) -->
+            <div
+                class="modal fade view-offer-modal send-payment-modal"
+                id="exampleModalCenter"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalCenterTitle"
+                style="display: none"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="title">
+                            <a href=""
+                                ><img
+                                    src="assets/images/icon/Arrow 2.png"
+                                    alt=""
+                            /></a>
+                            <h3 class="made-evolve-heading">
+                                Send for Payment
+                            </h3>
+                        </div>
+                        <div class="modal-bottom">
+                            <div class="to-email inputs form-group">
+                                <span>To:</span>
+                                <input
+                                    type="text"
+                                    placeholder="jordan@kingtide.com"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    class="inputs"
+                                    placeholder="Subject"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <textarea
+                                    name=""
+                                    id=""
+                                    cols="30"
+                                    rows="5"
+                                    class="inputs"
+                                    placeholder="Email"
+                                ></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-end">
+                            <div class="total">
+                                <p>Subtotal</p>
+                                <p>$2,000</p>
+                            </div>
+                            <div class="total add-markup">
+                                <a href="">Add additonal markup</a>
+                                <input type="text" name="" id="" />
+                            </div>
+                            <div class="total">
+                                <p>Total</p>
+                                <p>$2,000</p>
+                            </div>
+
+                            <div class="submit-buttons">
+                                <a href="" class="btn approval-btn">Send now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal (Make payment) -->
+            <div
+                class="modal fade view-offer-modal send-payment-modal"
+                id="exampleModalCenter2"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalCenterTitle"
+                style="display: none"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="title">
+                            <a href=""
+                                ><img
+                                    src="assets/images/icon/Arrow 2.png"
+                                    alt=""
+                            /></a>
+                            <h3 class="made-evolve-heading">
+                                Send for Payment
+                            </h3>
+                        </div>
+                        <div class="modal-bottom">
+                            <div class="card-details">
+                                <div class="payment-option">
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="inlineRadioOptions"
+                                            id="paymentOnFile"
+                                            value="Flexible"
+                                        />
+                                        <label
+                                            class="form-check-label file-payment-radio"
+                                            for="paymentOnFile"
+                                            >Payment on file</label
+                                        >
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="inlineRadioOptions"
+                                            id="inlineRadio1"
+                                            checked
+                                            value="specific"
+                                        />
+                                        <label
+                                            class="form-check-label credit-card-radio"
+                                            for="inlineRadio1"
+                                            >New Credit Card</label
+                                        >
+                                    </div>
+                                    <div
+                                        class="form-check form-check-inline ml-4"
+                                    >
+                                        <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="inlineRadioOptions"
+                                            id="inlineRadio2"
+                                            value="Flexible"
+                                        />
+                                        <label
+                                            class="form-check-label"
+                                            for="inlineRadio2"
+                                            >ACH</label
+                                        >
+                                    </div>
+                                </div>
+                                <p class="payment-descrip">
+                                    Maximum payment for credit card is $5,000. A
+                                    service fee of 3.5% will be applied.
+                                    Bookings over $5,000 require ACH.
+                                </p>
+                                <div class="credit-card-details">
+                                    <div class="form-group pt-4 mb-4">
+                                        <label for="" class="profile-labels"
+                                            >Name on Card</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control profile-inputs"
+                                            placeholder="First and Last Name"
+                                        />
+                                    </div>
+                                    <div class="card-spec">
+                                        <div class="box1 form-group">
+                                            <label for="" class="profile-labels"
+                                                >Credit Card</label
+                                            >
+                                            <input
+                                                type="text"
+                                                class="form-control profile-inputs"
+                                                placeholder="XXXXXXXXXXXX"
+                                            />
+                                        </div>
+                                        <div class="box2 form-group">
+                                            <label for="" class="profile-labels"
+                                                >Month</label
+                                            >
+                                            <input
+                                                type="text"
+                                                class="form-control profile-inputs"
+                                                placeholder="XX"
+                                            />
+                                        </div>
+                                        <div class="box3 form-group">
+                                            <label for="" class="profile-labels"
+                                                >Year</label
+                                            >
+                                            <input
+                                                type="text"
+                                                class="form-control profile-inputs"
+                                                placeholder="XX"
+                                            />
+                                        </div>
+                                        <div class="box4 form-group">
+                                            <label for="" class="profile-labels"
+                                                >CVC</label
+                                            >
+                                            <input
+                                                type="text"
+                                                class="form-control profile-inputs"
+                                                placeholder="CVC"
+                                            />
+                                        </div>
+                                        <div class="box5 form-group">
+                                            <label for="" class="profile-labels"
+                                                >Zip</label
+                                            >
+                                            <input
+                                                type="text"
+                                                class="form-control profile-inputs"
+                                                placeholder="XXXXX"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="save-card">
+                                        <label class="checkbox-container"
+                                            >Save card for future booking for
+                                            this client
+                                            <input type="checkbox" />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="payment-on-file">
+                                    <div class="box">
+                                        <div class="box-left">
+                                            <img
+                                                src="assets/images/icon/logos_visa.png"
+                                                alt=""
+                                            />
+                                            <div>
+                                                <p>Jordan Rothstein</p>
+                                                <p class="card-no">
+                                                    XXXXXXXXX2344
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="box-right">
+                                            <input
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="exampleRadios"
+                                                id="modal-radio"
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="modal-radio"
+                                                >Primary
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-end">
+                            <div class="total">
+                                <p>Subtotal</p>
+                                <p>$2,000</p>
+                            </div>
+                            <div class="total add-markup">
+                                <a href="">Add additonal markup</a>
+                                <input type="text" name="" id="" />
+                            </div>
+                            <div class="total">
+                                <p>Total</p>
+                                <p>$2,000</p>
+                            </div>
+
+                            <div class="submit-buttons">
+                                <a href="" class="btn approval-btn">pay now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jquery latest version -->
+        <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+        <!-- bootstrap 4 js -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/metisMenu.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+        <script src="assets/js/scripts.js"></script>
+
+        <!-- jquery for Nice Select -->
+        <script src="assets/jquery-nice-select-1.1.0/js/jquery.js"></script>
+        <script src="assets/jquery-nice-select-1.1.0/js/jquery.nice-select.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+        <script>
+            $(document).ready(function () {
+                $(".select-options").niceSelect();
+            });
+            // Flatpickr plugin
+            $(".custom-picker").flatpickr({
+                dateFormat: "d-m-y",
+            });
+        </script>
+        <script src="assets/js/responsive.js"></script>
+        <script>
+            $(".file-payment-radio").click(() => {
+                document.querySelector(".credit-card-details").style.display =
+                    "none";
+                document.querySelector(".payment-on-file").style.display =
+                    "block";
+            });
+            $(".credit-card-radio").click(() => {
+                document.querySelector(".credit-card-details").style.display =
+                    "block";
+                document.querySelector(".payment-on-file").style.display =
+                    "none";
+            });
+        </script>
+    </body>
+</html>

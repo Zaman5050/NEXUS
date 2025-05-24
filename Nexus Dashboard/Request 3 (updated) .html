@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Request</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="shortcut icon"
+            type="image/png"
+            href="assets/images/icon/favicon.ico"
+        />
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="assets/css/default-css.css" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="assets/css/responsive.css" />
+    </head>
+
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">
+                You are using an <strong>outdated</strong> browser. Please
+                <a href="http://browsehappy.com/">upgrade your browser</a> to
+                improve your experience.
+            </p>
+        <![endif]-->
+        <!-- preloader area start -->
+        <div id="preloader">
+            <div class="loader"></div>
+        </div>
+        <!-- preloader area end -->
+        <!-- page container area start -->
+        <div class="page-container">
+            <!-- sidebar menu area start -->
+            <div class="sidebar-menu">
+                <div class="sidebar-header">
+                    <div class="logo">
+                        <a href="index.html"
+                            ><img src="assets/images/icon/logo.png" alt="logo"
+                        /></a>
+                    </div>
+                </div>
+                <div class="main-menu">
+                    <div class="menu-inner">
+                        <nav>
+                            <ul class="metismenu" id="menu">
+                                <li class="">
+                                    <a href="#">
+                                        <img
+                                            class="greenIcon"
+                                            src="assets/images/icon/icon-0.png"
+                                        />
+                                        <img
+                                            class="whiteIcon"
+                                            src="assets/images/icon/icon-00.png"
+                                        />
+                                        <span>dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#">
+                                        <img
+                                            class="greenIcon"
+                                            src="assets/images/icon/icon-01.png"
+                                        />
+                                        <img
+                                            class="whiteIcon"
+                                            src="assets/images/icon/icon-1.png"
+                                        />
+                                        <span>Event Calendar</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#">
+                                        <img
+                                            class="greenIcon"
+                                            src="assets/images/icon/icon-02.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="whiteIcon"
+                                            src="assets/images/icon/icon-2.png"
+                                        />
+                                        <span>Agents</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="assets/images/icon/icon-3.png"
+                                        />
+                                        <span>Clients</span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">
+                                        <img
+                                            class="whiteIcon"
+                                            src="assets/images/icon/icon-4.png"
+                                        />
+                                        <img
+                                            class="greenIcon"
+                                            src="assets/images/icon/icon-04.png"
+                                            alt=""
+                                        />
+                                        <span>Team</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="assets/images/icon/icon-5.png"
+                                        />
+                                        <span>Requests</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="assets/images/icon/icon-6.png"
+                                        /><span>Chat</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="assets/images/icon/icon-7.png"
+                                        />
+                                        <span>Suppliers</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="assets/images/icon/icon-8.png"
+                                        />
+                                        <span>Reporting</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar menu area end -->
+            <!-- main content area start -->
+            <div class="main-content">
+                <!-- header area start -->
+                <div class="header-area">
+                    <div class="row align-items-center">
+                        <!-- nav and search button -->
+                        <div class="col clearfix">
+                            <div class="nav-btn pull-left">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="search-box pull-left"></div>
+                        </div>
+                        <!-- profile info & task notification -->
+                        <div class="col clearfix">
+                            <div class="nav_right_area">
+                                <div class="dropdown">
+                                    <button
+                                        class=""
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        My Account<img
+                                            src="assets/images/icon/logo_header.png"
+                                            alt=""
+                                        />
+                                    </button>
+                                    <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuButton"
+                                    >
+                                        <a class="dropdown-item" href="#"
+                                            >Link 1</a
+                                        >
+                                        <a class="dropdown-item" href="#"
+                                            >Link 2</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- header area end -->
+
+                <div class="main-content-inner">
+                    <!-- Input fields area start -->
+                    <div class="sales-report-area mt-2 mb-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="top-button">
+                                    <a href="#" class="back-button">
+                                        <img
+                                            src="assets/images/icon/back-arrow.png"
+                                            alt="back button"
+                                        />
+                                        <span>Back to requests</span>
+                                    </a>
+                                    <h1 class="dashboard_title">Requests</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="request-detail">
+                        <div class="row" style="gap: 20px 0">
+                            <div class="col-lg-6">
+                                <div class="request-left">
+                                    <div class="request-agent-detail">
+                                        <h4>Agent Name</h4>
+                                        <p class="mb-1">
+                                            jennifer@nexusbooking.com
+                                        </p>
+                                        <p class="mb-1">818-566-8237</p>
+                                        <a href="#">
+                                            <img
+                                                src="assets/images/icon/request-msg-icon.png"
+                                                alt=""
+                                            />
+                                            <span>Message</span>
+                                        </a>
+                                    </div>
+                                    <div class="request-client-detail">
+                                        <h4>Client Request</h4>
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="box">
+                                                    <p
+                                                        class="mb-2 detail-title"
+                                                    >
+                                                        Client
+                                                    </p>
+                                                    <p>-</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="box">
+                                                    <p
+                                                        class="mb-2 detail-title"
+                                                    >
+                                                        Event
+                                                    </p>
+                                                    <p>Knicks Game</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="box">
+                                                    <p
+                                                        class="mb-2 detail-title"
+                                                    >
+                                                        Quantity
+                                                    </p>
+                                                    <p>10</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-3">
+                                            <div class="col-3">
+                                                <div class="box">
+                                                    <p
+                                                        class="mb-2 detail-title"
+                                                    >
+                                                        Date
+                                                    </p>
+                                                    <p>10</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="box">
+                                                    <p
+                                                        class="mb-2 detail-title"
+                                                    >
+                                                        Estimated Budget
+                                                    </p>
+                                                    <p>10</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="notes mt-3">
+                                            <p class="mb-1">NOTES:</p>
+                                            <p>
+                                                He, I’m looking for a VIP box
+                                                for my client, including
+                                                shuttles and a hotel for 3
+                                                nights in Miami
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="request-updated-footer">
+                                        <div class="outer-div">
+                                            <div class="box">
+                                                <span>Status:</span>
+                                                <span class="status2"
+                                                    >Awaiting Quotes</span
+                                                >
+                                            </div>
+                                            <div class="box">
+                                                <span>Assignee:</span>
+                                                <span class="assignee"
+                                                    >YOU</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="request-supplier-quote">
+                                    <h4 class="mb-3">Supplier Quotes</h4>
+                                    <div class="request-quotes-table">
+                                        <!-- <p>
+                                            There are no quotes yet to display
+                                        </p> -->
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Supplier</th>
+                                                    <th>Type</th>
+                                                    <th>Quantity</th>
+                                                    <th>Price</th>
+                                                    <th>Total</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Supplier 1</td>
+                                                    <td>Type</td>
+                                                    <td>5</td>
+                                                    <td>$200</td>
+                                                    <td>$1,000</td>
+                                                    <td
+                                                        align="right"
+                                                        class="pr-0"
+                                                    >
+                                                        <a
+                                                            href=""
+                                                            class="view"
+                                                            data-toggle="modal"
+                                                            data-target="#exampleModalCenter1"
+                                                            >view</a
+                                                        >
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Supplier 1</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td
+                                                        align="right"
+                                                        class="pr-0"
+                                                    >
+                                                        <a
+                                                            href=""
+                                                            class="view remind"
+                                                            >remind</a
+                                                        >
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="request-create-offer">
+                                        <h4 class="mb-3">Create Offer</h4>
+                                        <div class="multiple-tickets-scroll">
+                                            <div class="ticket-type-inputs">
+                                                <div class="box1">
+                                                    <label for="" class="labels"
+                                                        >Ticket Type</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        placeholder="VIP"
+                                                        class="inputs form-control"
+                                                    />
+                                                </div>
+                                                <div class="box2">
+                                                    <label for="" class="labels"
+                                                        >Quantity</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        placeholder="3"
+                                                        class="inputs form-control"
+                                                    />
+                                                </div>
+                                                <div class="box3">
+                                                    <label for="" class="labels"
+                                                        >Price</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        placeholder="$"
+                                                        class="inputs form-control"
+                                                    />
+                                                </div>
+                                                <div class="box4">
+                                                    <span class="total-price"
+                                                        >$2,000</span
+                                                    >
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="add-another-type-button"
+                                            >
+                                                <a class="btn"
+                                                    >Add another type</a
+                                                >
+                                            </div>
+                                            <div
+                                                class="agent-commission-inputs mt-3"
+                                            >
+                                                <div class="box1">
+                                                    <label for="" class="labels"
+                                                        >Agent Commission</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        placeholder="$"
+                                                        class="inputs form-control"
+                                                    />
+                                                </div>
+                                                <div class="box2">
+                                                    <label for="" class="labels"
+                                                        >Upload Media</label
+                                                    >
+                                                    <input
+                                                        type="file"
+                                                        class="inputs form-control"
+                                                    />
+                                                    <button class="upload-btn">
+                                                        Upload Media
+                                                    </button>
+                                                </div>
+                                                <div class="box3">
+                                                    <span class="total-price"
+                                                        >$2,000</span
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="request-preview-offer">
+                                            <div class="cost">
+                                                <label for="" class="labels"
+                                                    >Internal Estimated
+                                                    Cost</label
+                                                >
+                                                <input
+                                                    type="text"
+                                                    placeholder="$"
+                                                    class="inputs form-control"
+                                                />
+                                            </div>
+                                            <div class="button">
+                                                <button
+                                                    class="btn"
+                                                    data-toggle="modal"
+                                                    data-target="#exampleModalCenter"
+                                                >
+                                                    Preview offer
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal pop-up 1-->
+                <div
+                    class="modal fade view-offer-modal"
+                    id="exampleModalCenter"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true"
+                >
+                    <div
+                        class="modal-dialog modal-dialog-centered"
+                        role="document"
+                    >
+                        <div class="modal-content">
+                            <h4>Send Offer</h4>
+                            <div class="modal-bottom">
+                                <div class="offer-detail">
+                                    <img
+                                        src="assets/images/icon/event-bg.png"
+                                        alt=""
+                                    />
+                                    <div class="text">
+                                        <p class="m-0">Event Name</p>
+                                        <p class="m-0">Ticket Type</p>
+                                        <p class="m-0">Quantity</p>
+                                        <p class="m-0">Price</p>
+                                        <p class="m-0">Description</p>
+                                    </div>
+                                </div>
+                                <div class="offer-detail">
+                                    <img
+                                        src="assets/images/icon/event-bg.png"
+                                        alt=""
+                                    />
+                                    <div class="text">
+                                        <p class="m-0">Event Name</p>
+                                        <p class="m-0">Ticket Type</p>
+                                        <p class="m-0">Quantity</p>
+                                        <p class="m-0">Price</p>
+                                        <p class="m-0">Description</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-end">
+                                <div class="total">
+                                    <p>Subtotal</p>
+                                    <p>$2,000</p>
+                                </div>
+                                <div class="total">
+                                    <p>Agent Commission</p>
+                                    <p>$2,000</p>
+                                </div>
+                                <div class="total">
+                                    <p>Total</p>
+                                    <p>$2,000</p>
+                                </div>
+
+                                <div class="submit-buttons">
+                                    <a href="" class="btn">Cancel</a>
+                                    <a href="" class="btn approval-btn"
+                                        >Submit for approval</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal pop-up 2 -->
+                <div
+                    class="modal fade view-offer-modal"
+                    id="exampleModalCenter1"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true"
+                >
+                    <div
+                        class="modal-dialog modal-dialog-centered"
+                        role="document"
+                    >
+                        <div class="modal-content">
+                            <h4>Preview Offer</h4>
+                            <div class="modal-bottom">
+                                <h4>Supplier Name</h4>
+                                <p>
+                                    Any notes the supplier wrong in their offer
+                                </p>
+                                <div class="offer-detail">
+                                    <img
+                                        src="assets/images/icon/event-bg.png"
+                                        alt=""
+                                    />
+                                    <div class="text">
+                                        <p class="m-0">Ticket Type</p>
+                                        <p class="m-0">Quantity</p>
+                                        <p>Price</p>
+                                        <p class="m-0">Description</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- main content area end -->
+        </div>
+        <!-- page container area end -->
+
+        <!-- jquery latest version -->
+        <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+        <!-- bootstrap 4 js -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/metisMenu.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+        <script src="assets/js/scripts.js"></script>
+    </body>
+</html>

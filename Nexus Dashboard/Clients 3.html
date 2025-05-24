@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Clients</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/images/icon/favicon.ico"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/default-css.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/style2.css" />
+    <link rel="stylesheet" href="assets/css/responsive2.css" />
+    <link
+      rel="stylesheet"
+      href="assets/jquery-nice-select-1.1.0/css/nice-select.css"
+    />
+  </head>
+
+  <body>
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
+    <![endif]-->
+    <!-- preloader area start -->
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+    <!-- preloader area end -->
+    <!-- navbar start -->
+    <nav class="navigation">
+      <div class="navbar">
+        <div class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="logo">
+          <a href="#"><img src="assets/images/icon/logo.png" alt="" /></a>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#">Dashboard</a>
+          </li>
+          <li class="active">
+            <a href="#">Clients</a>
+          </li>
+          <li>
+            <a href="#">Event Calendar</a>
+          </li>
+          <li>
+            <a href="#">Sales</a>
+          </li>
+          <li>
+            <a href="#">Team</a>
+          </li>
+          <li>
+            <a href="#">Requests</a>
+          </li>
+          <li>
+            <a href="#">Profile</a>
+          </li>
+        </ul>
+        <div class="dropdown">
+          <button
+            class="dropdown-button"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span> Jennifer</span>
+            <img src="assets/images/icon/profile.png" alt="" />
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+          </div>
+        </div>
+      </div>
+      <!-- Sidebar for small screens -->
+      <div class="sidebar-menu">
+        <div class="logo">
+          <div class="close-icon">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+          </div>
+          <a href="#"><img src="assets/images/icon/logo.png" alt="" /></a>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#">Dashboard</a>
+          </li>
+          <li>
+            <a class="active" href="#">Clients</a>
+          </li>
+          <li>
+            <a href="#">Event Calendar</a>
+          </li>
+          <li>
+            <a href="#">Sales</a>
+          </li>
+          <li>
+            <a href="#">Team</a>
+          </li>
+          <li>
+            <a href="#">Requests</a>
+          </li>
+          <li>
+            <a href="#">Profile</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- navbar area end -->
+
+    <!-- main content area -->
+    <div class="main-content-sect pb-5">
+      <div class="sales-report-area mt-2 mb-5">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="top-button">
+              <a href="#" class="back-button">
+                <img
+                  src="assets/images/icon/back-arrow.png"
+                  alt="back button"
+                />
+                <span>Back to clients</span>
+              </a>
+              <h1 class="dashboard_title">Clients</h1>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex justify-content-end">
+            <div class="supplier-buttons">
+              <a class="edit-button btn">edit client</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Input fields area end -->
+      </div>
+      <div class="supplier-detail-sect">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="supplier-info-left client-info">
+              <div class="box1 box">
+                <span class="circle-name">JH</span>
+              </div>
+              <div class="box2 box">
+                <h3 class="mb-3">Jennifer Hudson</h3>
+                <div class="client-caption">
+                  <div class="caption">
+                    <p>C: 818-344-2412 E</p>
+                    <p>ennifer@gmail.com</p>
+                  </div>
+                  <div class="caption">
+                    <p>John Cormack</p>
+                    <p>john@msg.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="supplier-info-right">
+              <div class="box">
+                <p>Total booking volume</p>
+                <h2>$45,230</h2>
+              </div>
+              <div class="box">
+                <p>Events Booked</p>
+                <h2>4</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="agents-sect">
+        <div class="top_agents_sect">
+          <!-- Tabs area -->
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="home-tab"
+                data-toggle="tab"
+                href="#home"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+                >New</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="profile-tab"
+                data-toggle="tab"
+                href="#profile"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="false"
+                >Past bookings</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="contact-tab"
+                data-toggle="tab"
+                href="#contact"
+                role="tab"
+                aria-controls="contact"
+                aria-selected="false"
+                >Clients</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="home"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Event</th>
+                    <th scope="col">Venue</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Category</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row">Knicks v lakers</td>
+                    <td>John Taylor</td>
+                    <td>August 12, 2023</td>
+                    <td>$3500</td>
+                    <td></td>
+                    <td></td>
+
+                    <td align="right">
+                      <a href="#" class="view_button">View</a>
+                    </td>
+                  </tr>
+
+                  <tr style="height: 50px"></tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="profile"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Event</th>
+                    <th scope="col">Client</th>
+                    <th scope="col">Event Date</th>
+                    <th scope="col">Booking Volume</th>
+                    <th scope="col">Comission</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row">Knicks v lakers</td>
+                    <td>John Taylor</td>
+                    <td>August 12, 2023</td>
+                    <td>$3500</td>
+                    <td>$400</td>
+                    <td class="table-buttons">
+                      <a href="#" class="view_button">Message</a>
+                      <a href="#" class="view_button">View</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Knicks v lakers</td>
+                    <td>John Taylor</td>
+                    <td>August 12, 2023</td>
+                    <td>$3500</td>
+                    <td>$400</td>
+                    <td>
+                      <a href="#" class="view_button">Message</a>
+                      <a href="#" class="view_button">View</a>
+                    </td>
+                  </tr>
+
+                  <tr style="height: 50px"></tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="contact"
+              role="tabpanel"
+              aria-labelledby="contact-tab"
+            >
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jquery latest version -->
+    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+    <!-- bootstrap 4 js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+    <script src="assets/js/scripts.js"></script>
+
+    <!-- jquery for Nice Select -->
+    <script src="assets/jquery-nice-select-1.1.0/js/jquery.js"></script>
+    <script src="assets/jquery-nice-select-1.1.0/js/jquery.nice-select.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("select").niceSelect();
+      });
+    </script>
+    <script src="assets/js/responsive.js"></script>
+  </body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Event Calendar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/images/icon/favicon.ico"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/default-css.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- Nice Select -->
+    <link
+      rel="stylesheet"
+      href="assets/jquery-nice-select-1.1.0/css/nice-select.css"
+    />
+  </head>
+
+  <body>
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
+    <![endif]-->
+    <!-- preloader area start -->
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+    <!-- preloader area end -->
+    <!-- page container area start -->
+    <div class="page-container">
+      <!-- sidebar menu area start -->
+      <div class="sidebar-menu">
+        <div class="sidebar-header">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="assets/images/icon/logo.png" alt="logo"
+            /></a>
+          </div>
+        </div>
+        <div class="main-menu">
+          <div class="menu-inner">
+            <nav>
+              <ul class="metismenu" id="menu">
+                <li class="">
+                  <a href="#">
+                    <img
+                      class="greenIcon"
+                      src="assets/images/icon/icon-0.png"
+                    />
+                    <img
+                      class="whiteIcon"
+                      src="assets/images/icon/icon-00.png"
+                    />
+                    <span>dashboard</span>
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="#">
+                    <img
+                      class="greenIcon"
+                      src="assets/images/icon/icon-01.png"
+                    />
+                    <img
+                      class="whiteIcon"
+                      src="assets/images/icon/icon-1.png"
+                    />
+                    <span>Event Calendar</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="greenIcon"
+                      src="assets/images/icon/icon-02.png"
+                      alt=""
+                    />
+                    <img
+                      class="whiteIcon"
+                      src="assets/images/icon/icon-2.png"
+                    />
+                    <span>Agents</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/icon/icon-3.png" />
+                    <span>Clients</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/icon/icon-4.png" />
+                    <span>Team</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/icon/icon-5.png" />
+                    <span>Requests</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <img src="assets/images/icon/icon-6.png" /><span>Chat</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/icon/icon-7.png" />
+                    <span>Suppliers</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/icon/icon-8.png" />
+                    <span>Reporting</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- sidebar menu area end -->
+      <!-- main content area start -->
+      <div class="main-content">
+        <!-- header area start -->
+        <div class="header-area">
+          <div class="row align-items-center">
+            <!-- nav and search button -->
+            <div class="col clearfix">
+              <div class="nav-btn pull-left">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="search-box pull-left"></div>
+            </div>
+            <!-- profile info & task notification -->
+            <div class="col clearfix">
+              <div class="nav_right_area">
+                <div class="dropdown">
+                  <button
+                    class=""
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    My Account<img
+                      src="assets/images/icon/logo_header.png"
+                      alt=""
+                    />
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- header area end -->
+
+        <div class="main-content-inner">
+          <!-- Input fields area start -->
+          <div class="sales-report-area mt-5 mb-5">
+            <h1 class="dashboard_title">Create Event</h1>
+            <div class="row mt-5">
+              <div class="col-lg-6">
+                <div class="event-fields-left">
+                  <div class="form-row select">
+                    <div class="form-group col-md-6 mb-4">
+                      <label for="">Visibility</label>
+                      <select
+                        id="inputState"
+                        class="form-control select-options"
+                      >
+                        <option>Public</option>
+                        <option>Private</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-6 mb-4">
+                      <label for="">What's the event category</label>
+                      <select
+                        id="inputState"
+                        class="form-control select-options"
+                      >
+                        <option>Award Ceremony</option>
+                        <option>Prize Ceremony</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group search-icon-bg mb-4">
+                    <label for="">Suppliers</label>
+                    <input
+                      type="text"
+                      class="form-control search-input mb-3"
+                      placeholder="Suppliers"
+                    />
+                  </div>
+
+                  <div class="form-group date-radios mb-4">
+                    <h5 class="mb-3">Purchasing Options</h5>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio1"
+                        value="Buy Now"
+                      />
+                      <label class="form-check-label" for="inlineRadio1"
+                        >Buy Now</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline ml-md-4">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio2"
+                        value="Request Access"
+                      />
+                      <label class="form-check-label" for="inlineRadio2"
+                        >Request Access</label
+                      >
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="">Commission</label>
+                    <input type="text" class="form-control" placeholder="10%" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="event-fields-left event-fields-right">
+                  <div class="form-group ticket-table">
+                    <label for="">Ticket Type</label>
+                    <div class="add-ticket-data">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>Type</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td align="middle">
+                              <img
+                                src="assets/images/icon/ticket-img.png"
+                                alt=""
+                              />
+                            </td>
+                            <td>VIP</td>
+                            <td>$3000</td>
+                            <td>12</td>
+                            <td>This is the...</td>
+                          </tr>
+                          <tr>
+                            <td align="middle">
+                              <img
+                                src="assets/images/icon/ticket-img.png"
+                                alt=""
+                              />
+                            </td>
+                            <td>VIP</td>
+                            <td>$3000</td>
+                            <td>12</td>
+                            <td>This is the...</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="perform-buttons">
+                    <a href="#" class="cancel-btn">CANCEL</a>
+                    <select name="" id="" class="select-buttons">
+                      <option value="publish"><a href="">Publish</a></option>
+                      <option value="publish"><a href="">Preview</a></option>
+                      <option value="publish"><a href="">Save Draft</a></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Input fields area end -->
+          </div>
+        </div>
+      </div>
+
+      <!-- main content area end -->
+    </div>
+    <!-- page container area end -->
+
+    <!-- jquery latest version -->
+    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+    <!-- bootstrap 4 js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+    <script src="assets/js/scripts.js"></script>
+
+    <!-- jquery for Nice Select -->
+    <script src="assets/jquery-nice-select-1.1.0/js/jquery.js"></script>
+    <script src="assets/jquery-nice-select-1.1.0/js/jquery.nice-select.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("select").niceSelect();
+      });
+    </script>
+  </body>
+</html>
